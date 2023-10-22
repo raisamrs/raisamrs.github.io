@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hind:wght@300&family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script&family=Hind:wght@300&family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
     body {
         background-color: #f0d694;
         font-family: 'Hind', sans-serif;
         font-size: 30px;
-        margin: 0px 40px;
-
     }
 
     #titulo {
@@ -16,67 +15,51 @@
         text-align: center;
         font-size: 3em;
         margin-bottom: 0px;
-    }
-
-    h2 {
-        color: #2a9d8f;
-        font-size: 2.5em;
-        padding-top: 10px;
-        margin-top: 0px;
-        margin-bottom: 30px;
-        text-align: center;
-        border-top: 6px dotted #264653;
-        border-bottom: 6px dotted #264653;
-    }
-
-    .meu-nome h3 {
-        margin-bottom: 15px;
+        border-bottom: 6px dotted;
     }
 
     .meu-nome {
-         display: inline-block;
-         width: 40%;
-         height: 30%;
-         float: left;
-    }
-    
-    #meu-nome-completo {
+        margin-bottom: 15px;
+        text-align: center;
         color: #2a9d8f;
-        font-size: 30px;
-        margin-top: 0px;
+        font-size: 1.5em;
+        border-bottom: 6px dotted #264653;
     }
 
-    .about-me {
-    display: flexbox;
-    }
-
-    div > h3 {
-        margin-top: 0px;
-        text-align: center;
-        color: #e76f51;
-        font-size: 1.8em;
-        text-align: left;
-    }
-
-    #qual-meu-nome {
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .foto-container {
+        width:270px;
+        height: 353px;
         display: inline-block;
-        padding: 10px;
-        padding-top: 0px;
-    }
-
-    #meu-nome{
-      display: block;
-    }
-
-    .foto {
-        display: inline;
-        text-align: center;
-        width: 200px;
     }
     
     img { 
-        width: 15%;
-        border: 5px solid #8b7439;
+        width: 250px;
+        padding: 10px;
+        background-color: #8b7439;
+    }
+
+
+    .about-me {
+        margin-right: 55%;
+        display: inline-block;
+        float: right;
+        margin-left: 0px;
+    }
+
+    .habilidades{
+        display: flexbox;
+    }
+
+    .habilidade-impar:hover{
+        background-color: #2a9d8f;
+    }
+
+   /*  div {
+        border: 2px solid red;
+    } */
+ 
+    h3:not(#nome-completo){
+        font-size: 1.8em;
+        color: #e76f51;
+        font-family: 'Exo 2', sans-serif;
     }
