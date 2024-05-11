@@ -1,5 +1,9 @@
+body {
+	background-color: #945da3;
+}
 .main-container {
 	display: flex;
+	flex-direction: column;
 }
 
 .navbar {
