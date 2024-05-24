@@ -4,7 +4,7 @@ function About() {
       <h4>Sobre mim</h4>
       <p> Oiê! Seja bem-vinde! 😊 </p>
       {/* eslint-disable-next-line max-len */}
-      <p>Tenho 32 anos, sou de Salvador - BA, tenho 32 anos e sou mãe de pet! 🐕</p>
+      <p>Tenho 32 anos, nasci e moro em Salvador - BA e sou mãe de pet! 🐕</p>
       <p>
         {/* eslint-disable-next-line max-len */}
         Com background na área de Qualidade de Software, adquiri habilidades essenciais trabalhando como testadora para algumas consultorias e tive o privilégio de contribuir em projetos desafiadores para clientes renomados como B3 e Itaú. Recentemente, decidi realizar uma transição de subárea, percebendo que o desenvolvimento de software me oferecerá maior realização profissional.
