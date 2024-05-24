@@ -1,3 +1,25 @@
 img {
   height: 20vh;
 }
+
+.homeContainer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+
+}
+.cursor {
+  border-left: 2px solid #fff;
+  display: inline-block;
+  margin-left: 2px;
+}
+.myName{
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  font-weight: bold;
+}
+
+.typedText{
+    display: inline-block;
+    font-weight: lighter;
+    position: relative;
+  }
