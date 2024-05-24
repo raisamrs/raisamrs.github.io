@@ -5,6 +5,7 @@ import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import Skills from './pages/Skills/Skills';
+import SentMessage from './pages/SentMessage/SentMessage';
 
 function App() {
   return (
@@ -12,16 +13,18 @@ function App() {
       <nav className="navbar">
         <NavLink to="/" end className="nav-link">Home</NavLink>
         <NavLink to="/sobre-mim" className="nav-link">Sobre mim</NavLink>
-        <NavLink to="/contato" className="nav-link">Contato</NavLink>
         <NavLink to="/projetos" className="nav-link">Projetos</NavLink>
         <NavLink to="/skills" className="nav-link">Skills</NavLink>
+        <NavLink to="/contato" className="nav-link">Contato</NavLink>
       </nav>
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/sobre-mim" element={ <About /> } />
-        <Route path="/contato" element={ <Contact /> } />
         <Route path="/projetos" element={ <Projects /> } />
-        <Route path="skills" element={ <Skills /> } />
+        <Route path="/skills" element={ <Skills /> } />
+        <Route path="/contato" element={ <Contact /> } />
+        <Route path="/sent-message" element={ <SentMessage /> } />
+
       </Routes>
     </div>
   );
