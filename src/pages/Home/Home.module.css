@@ -1,25 +1,75 @@
+@keyframes blink {
+  50% {
+    visibility: hidden;
+  }
+}
+
 img {
-  height: 20vh;
+  height: 30vw;
+  width: 30vw;
+}
+
+.cursor {
+  animation: blink 0.6s step-start 1;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  height: 3vw;
+  width: 0.3vw;
+}
+
+.helloWorld {
+  color: rgb(179, 241, 44);
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .homeContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
 
+.iAm {
+  color: white;
+  font-size: 3vw;
+  font-weight: 300;
 }
-.cursor {
-  border-left: 2px solid #fff;
-  display: inline-block;
-  margin-left: 2px;
+
+.imgContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 30vw;
+  justify-content: center;
+  margin-left: 4vw;
+  width: 30vw;
 }
-.myName{
-  color: transparent;
+
+.myName {
   -webkit-text-stroke: 1px #ffffff;
-  font-weight: bold;
+  color: transparent;
+  font-size: 7vw;
+  font-weight: 900;
+  text-align: center;
 }
 
-.typedText{
-    display: inline-block;
-    font-weight: lighter;
-    position: relative;
-  }
+.textContent {
+  align-items: center;
+  margin-top: vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.typedText {
+  color: white;
+  display: inline-block;
+  font-size: 3vw;
+  font-weight: 300;
+  position: relative;
+}
