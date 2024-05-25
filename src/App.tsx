@@ -10,7 +10,7 @@ import SentMessage from './pages/SentMessage/SentMessage';
 function App() {
   return (
     <div className="main-container">
-      <nav className="navbar">
+      <nav className="navbar navbar-light bg-light custom-navbar">
         <NavLink to="/" end className="nav-link">Home</NavLink>
         <NavLink to="/sobre-mim" className="nav-link">Sobre mim</NavLink>
         <NavLink to="/projetos" className="nav-link">Projetos</NavLink>
