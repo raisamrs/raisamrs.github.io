@@ -4,7 +4,7 @@ import {
   myNameClasses, professionClasses, helloWorldClasses, iAmClasses, imgProfileClasses,
   textContainerClasses, homeContainerClasses,
   socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
-} from '../../helpers/classesNames';
+} from './classesNames';
 import profilePicture from '../../assets/Raisa - cabelo lilás.png';
 import githubIcon from '../../assets/icons8-github.svg';
 import linkedinIcon from '../../assets/icons8-linkedin-500.svg';
