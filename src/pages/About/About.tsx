@@ -1,7 +1,10 @@
+import { aboutClasses, aboutMeClasses, aboutMeContainerClasses } from './classesNames';
+
 function About() {
   return (
-    <div>
-      <h4>Sobre mim</h4>
+    <div className={ aboutMeContainerClasses }>
+      <h1 className={ aboutClasses }>Sobre</h1>
+      <h1 className={ aboutMeClasses }>Sobre mim</h1>
       <p> Oiê! Seja bem-vinde! 😊 </p>
       {/* eslint-disable-next-line max-len */}
       <p>Tenho 32 anos, nasci e moro em Salvador - BA e sou mãe de pet! 🐕</p>

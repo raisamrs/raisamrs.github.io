@@ -1,0 +1,18 @@
+
+.about {
+  -webkit-text-stroke: 1px #dee2e6;
+  color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+  text-align: center;
+}
+
+.aboutMeContainer {
+  background-color: white;
+}
+
+.aboutMe {
+  color: #6c4e75;
+  font-family: 'Roboto', sans-serif;
+}
