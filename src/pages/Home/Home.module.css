@@ -4,7 +4,7 @@
   }
 }
 
-img {
+.imgProfileContainer {
   height: 30vw;
   width: 30vw;
 }
@@ -28,9 +28,6 @@ img {
 }
 
 .homeContainer {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -41,16 +38,6 @@ img {
   font-weight: 300;
 }
 
-.imgContainer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 30vw;
-  justify-content: center;
-  margin-left: 4vw;
-  width: 30vw;
-}
-
 .myName {
   -webkit-text-stroke: 1px #ffffff;
   color: transparent;
@@ -59,11 +46,28 @@ img {
   text-align: center;
 }
 
-.textContent {
+.socialNetWorksContainer {
+  height: 10vh;
+  margin: 4vw 0;
+  width: 100%;
+}
+
+.socialNetWork {
+  height: 7vh;
+  width: 7vh;
+}
+
+.textContainer {
   align-items: center;
-  margin-top: vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 4vw;
+}
+
+.textImageContainer{
+  display: flex;
+  flex-direction: row;
 }
 
 .typedText {

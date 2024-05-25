@@ -1,10 +1,13 @@
 import { useEffect, useState, useRef } from 'react';
 import classNames from 'classnames';
 import {
-  myNameClasses, professionClasses, helloWorldClasses, iAmClasses, imgClasses,
-  textContentClasses,
+  myNameClasses, professionClasses, helloWorldClasses, iAmClasses, imgProfileClasses,
+  textContainerClasses, homeContainerClasses,
+  socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
 } from '../../helpers/classesNames';
 import profilePicture from '../../assets/Raisa - cabelo lilás.png';
+import githubIcon from '../../assets/icons8-github.svg';
+import linkedinIcon from '../../assets/icons8-linkedin-500.svg';
 import styles from './Home.module.css';
 
 function Home() {
@@ -19,8 +22,8 @@ function Home() {
       const i = indexRef.current;
       if (i < fullText.length) {
         setText((prev) => prev + fullText.charAt(i));
-        setShowCursor((prev) => !prev); // Alterna a visibilidade do cursor
-        indexRef.current += 1; // Incrementar o índice
+        setShowCursor((prev) => !prev);
+        indexRef.current += 1;
       } else {
         clearInterval(intervalId);
         setTimeout(() => {
@@ -30,28 +33,56 @@ function Home() {
       }
     }, speed);
 
-    return () => clearInterval(intervalId); // Limpar intervalo quando o componente desmonta
+    return () => clearInterval(intervalId);
   }, [text, fullText, speed]);
 
   return (
-    <div className={ styles.homeContainer }>
-      <div className={ imgClasses }>
-        <img
-          src={ profilePicture }
-          alt="foto de perfil"
-        />
-      </div>
-      <div className={ textContentClasses }>
-        <h2 className={ helloWorldClasses }>&lt; Olá, Mundo! /&gt;</h2>
-        <h3 className={ iAmClasses }>Eu sou</h3>
-        <h1 className={ myNameClasses }>Raisa Moreno</h1>
-        <h3 className={ professionClasses }>
-          {text}
-          <span
-            className={ classNames(styles.cursor, { [styles.hidden]: !showCursor }) }
+    <div className={ homeContainerClasses }>
+      <div className={ textImageContainerClasses }>
+        <div className={ styles.imgContainer }>
+          <img
+            className={ imgProfileClasses }
+            src={ profilePicture }
+            alt="foto de perfil"
           />
-        </h3>
+        </div>
+        <div className={ textContainerClasses }>
+          <h2 className={ helloWorldClasses }>&lt; Olá, Mundo! /&gt;</h2>
+          <h3 className={ iAmClasses }>Eu sou</h3>
+          <h1 className={ myNameClasses }>Raisa Moreno</h1>
+          <h3 className={ professionClasses }>
+            {text}
+            <span
+              className={ classNames(styles.cursor, { [styles.hidden]: !showCursor }) }
+            />
+          </h3>
+          <div className={ socialNetWorksContainerClasses }>
+            <a
+              href="https://www.linkedin.com/in/raisamrs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className={ socialNetWorkClasses }
+                src={ linkedinIcon }
+                alt="link para perfil do LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/raisamrs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className={ socialNetWorkClasses }
+                src={ githubIcon }
+                alt="link para perfil do GitHub"
+              />
+            </a>
+          </div>
+        </div>
       </div>
+
     </div>
   );
 }
