@@ -14,3 +14,10 @@ export const aboutMeClasses = classNames(
 export const aboutMeContainerClasses = classNames(
   styles.aboutMeContainer,
 );
+export const aboutMeContentClasses = classNames(
+  styles.aboutMeContent,
+  'position-relative',
+  'd-flex',
+  'align-items-center',
+  'justify-content-center',
+);

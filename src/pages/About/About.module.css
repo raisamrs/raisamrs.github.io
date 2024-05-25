@@ -1,18 +1,33 @@
-
+:root {
+  --purple: #6c4e75;
+}
+p {
+  color: var(--purple);
+}
 .about {
-  -webkit-text-stroke: 1px #dee2e6;
+  -webkit-text-stroke: 1px rgb(222, 226, 230);
   color: transparent;
   font-family: 'Roboto', sans-serif;
   font-size: 7vw;
   font-weight: 900;
+  position: relative;
   text-align: center;
+}
+
+.aboutMeContent {
+  height: 10vw;
+}
+
+.aboutMe {
+  color: var(--purple);
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .aboutMeContainer {
   background-color: white;
-}
-
-.aboutMe {
-  color: #6c4e75;
-  font-family: 'Roboto', sans-serif;
+  padding: 2rem 0;
 }
