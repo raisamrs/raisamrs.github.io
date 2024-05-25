@@ -10,29 +10,36 @@ html, body {
 	height: 100%;
 }
 
+:root {
+  --purple: #6c4e75;
+  --pink: #ff25af;
+  --light-grey: #dee2e6;
+	--grey: #808080
+}
 .main-container {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	min-width: 100vw;
 }
 
 .navbar {
-	box-shadow: 0 4px 2px -2px gray; 
-	background-color: #6c4e75;
-	color: #6c4e75;
+	box-shadow: 0 4px 2px -2px var(--grey); 
+	background-color: var(--purple);
+	color: var(--purple);
 	display: flex;
-	padding: 2vw;
+	padding-bottom: 03vh;
 	gap: 3%;
 }
 .nav-link {
-display: flex;
-font-size: 1.6vw;
-justify-content: space-evenly;
-width: 15vw;
+	display: flex;
+	font-size: 1.3vw;
+	justify-content: space-evenly;
+	width: 15vw;
 }
 
 .nav-link:hover {
-	color: rgba(31, 30, 30, 0.775);
+	color: var(--pink);
 	font-weight: bolder;
   transform: scale(1.3);
 }
