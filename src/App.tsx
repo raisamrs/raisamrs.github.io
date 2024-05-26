@@ -1,21 +1,48 @@
 import { Routes, Route, NavLink } from 'react-router-dom';
-import './App.css';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import Skills from './pages/Skills/Skills';
 import SentMessage from './pages/SentMessage/SentMessage';
+import styles from './App.module.css';
+import { navBarClasses, navLinkClasses } from './classesNamesApp';
 
 function App() {
   return (
-    <div className="main-container">
-      <nav className="navbar navbar-light bg-light custom-navbar">
-        <NavLink to="/" end className="nav-link">Home</NavLink>
-        <NavLink to="/sobre-mim" className="nav-link">Sobre mim</NavLink>
-        <NavLink to="/projetos" className="nav-link">Projetos</NavLink>
-        <NavLink to="/skills" className="nav-link">Skills</NavLink>
-        <NavLink to="/contato" className="nav-link">Contato</NavLink>
+    <div className={ styles.mainContainer }>
+      <nav className={ navBarClasses }>
+        <NavLink
+          to="/"
+          end
+          className={ navLinkClasses }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/sobre-mim"
+          className={ navLinkClasses }
+        >
+          Sobre mim
+        </NavLink>
+        <NavLink
+          to="/projetos"
+          className={ navLinkClasses }
+        >
+          Projetos
+        </NavLink>
+        <NavLink
+          to="/skills"
+          className={ navLinkClasses }
+        >
+          Skills
+        </NavLink>
+        <NavLink
+          to="/contato"
+          className={ navLinkClasses }
+        >
+          Contato
+        </NavLink>
       </nav>
       <Routes>
         <Route path="/" element={ <Home /> } />

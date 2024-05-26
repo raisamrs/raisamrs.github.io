@@ -19,7 +19,7 @@ html, body {
 	--grey: #808080;
 }
 
-.main-container {
+.mainContainer {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -36,14 +36,39 @@ html, body {
 	gap: 3%;
 }
 
-.nav-link {
+.navLink {
+	color: var(--purple);
 	display: flex;
 	font-size: 1.3vw;
 	justify-content: space-evenly;
+	padding-top: 3vh;
+	text-decoration: none;
 	width: 15vw;
 }
 
-.nav-link:hover {
-	color: var(--pink);
-	transform: scale(1.1);
+.navLinkHover {
+	&:hover {
+		color: var(--pink);
+		transform: scale(1.1);
+	}
+} 
+
+.titleBg {
+  -webkit-text-stroke: 1px var(--light-grey);
+  color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+  position: relative;
+  text-align: center;
+}
+
+.titleFg {
+  color: var(--purple);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
