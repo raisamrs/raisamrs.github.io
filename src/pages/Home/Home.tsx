@@ -5,7 +5,7 @@ import {
   textContainerClasses, homeContainerClasses,
   socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
 } from './classesNames';
-import profilePicture from '../../assets/Raisa - cabelo vermelho.png';
+import profilePicture from '../../assets/Raisa - cabelo vermelho.jpg';
 import githubIcon from '../../assets/icons8-github.svg';
 import linkedinIcon from '../../assets/icons8-linkedin-500.svg';
 import styles from './Home.module.css';
@@ -39,7 +39,7 @@ function Home() {
   return (
     <div className={ homeContainerClasses }>
       <div className={ textImageContainerClasses }>
-        <div className={ styles.imgContainer }>
+        <div>
           <img
             className={ imgProfileClasses }
             src={ profilePicture }

@@ -4,9 +4,11 @@
   }
 }
 
-.imgProfileContainer {
-  height: 30vw;
-  width: 30vw;
+.imgProfile {
+  height: 24vw;
+  width: 24vw;
+  margin-top: 7vh;
+  margin-left: 3vw;
 }
 
 .cursor {

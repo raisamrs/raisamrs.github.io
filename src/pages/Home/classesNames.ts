@@ -14,7 +14,11 @@ export const iAmClasses = classNames(
   'mb-3',
 );
 export const imgProfileClasses = classNames(
-  styles.imgProfileContainer,
+  styles.imgProfile,
+  'img-thumbnail',
+  'col',
+  'col-2',
+  'shadow-lg',
 );
 export const myNameClasses = classNames(
   styles.myName,
@@ -37,6 +41,8 @@ export const socialNetWorksContainerClasses = classNames(
 );
 export const textContainerClasses = classNames(
   styles.textContainer,
+  'col',
+  'col-8',
 );
 
 export const textImageContainerClasses = classNames(
