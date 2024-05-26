@@ -19,26 +19,6 @@ p {
   color: var(--purple);
 }
 
-.about {
-  -webkit-text-stroke: 1px var(--light-grey);
-  color: transparent;
-  font-family: 'Roboto', sans-serif;
-  font-size: 7vw;
-  font-weight: 900;
-  position: relative;
-  text-align: center;
-}
-
-.aboutMe {
-  color: var(--purple);
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .aboutMeContainer {
   border: 1px solid blue;
   background-color: white;

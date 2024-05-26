@@ -2,8 +2,8 @@ import projectsData from '../../data/projects.json';
 import styles from './Projects.module.css';
 import pixelsArt from '../../assets/pixelsArt.png';
 import { ProjectImageType } from '../../types';
-import { projectContainerClasses, projectSubtitleClasses,
-  projectTitleClasses, titleContainerClasses } from './classesNames';
+import { projectContainerClasses, titleContainerClasses } from './classesNamesProjects';
+import { titleBgClasses, titleFgClasses } from '../../classesNamesApp';
 
 function Projects() {
   const projectImages: ProjectImageType = {
@@ -13,8 +13,8 @@ function Projects() {
   return (
     <div className={ projectContainerClasses }>
       <div className={ titleContainerClasses }>
-        <h1 className={ projectTitleClasses }>Projetos</h1>
-        <h2 className={ projectSubtitleClasses }>Projetos</h2>
+        <h1 className={ titleBgClasses }>Projetos</h1>
+        <h2 className={ titleFgClasses }>Projetos</h2>
       </div>
       <div className="cards-container">
         {projectsData.map((project, i) => (

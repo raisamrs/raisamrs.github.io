@@ -1,7 +1,7 @@
-import {
-  aboutClasses, aboutMeClasses, aboutMeContainerClasses, profilePictureClasses,
+import { aboutMeContainerClasses, profilePictureClasses,
   titleContainerClasses, textImageContainerClasses, textContainerClasses,
-} from './classesNames';
+} from './classesNamesAbout';
+import { titleBgClasses, titleFgClasses } from '../../classesNamesApp';
 import styles from './About.module.css';
 import picturePurpleHair from '../../assets/Raisa - cabelo lilás.png';
 
@@ -9,8 +9,8 @@ function About() {
   return (
     <div className={ aboutMeContainerClasses }>
       <div className={ titleContainerClasses }>
-        <h1 className={ aboutClasses }>Sobre</h1>
-        <h2 className={ aboutMeClasses }>Sobre mim</h2>
+        <h1 className={ titleBgClasses }>Sobre</h1>
+        <h2 className={ titleFgClasses }>Sobre mim</h2>
       </div>
       <div className={ textImageContainerClasses }>
         <img
