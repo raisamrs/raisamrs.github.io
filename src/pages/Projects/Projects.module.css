@@ -1,3 +1,31 @@
 .projectCard {
   border: 1px solid wheat
 }
+
+.projectContainer {
+  border: 1px solid red;
+}
+
+.titleContainer {
+  border: 1px solid orange;
+}
+
+.projectTitle {
+  -webkit-text-stroke: 1px var(--light-grey);
+  color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+  position: relative;
+  text-align: center;
+}
+
+.projectSubtitle {
+  color: var(--purple);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
