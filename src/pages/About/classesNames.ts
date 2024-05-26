@@ -13,11 +13,28 @@ export const aboutMeClasses = classNames(
 
 export const aboutMeContainerClasses = classNames(
   styles.aboutMeContainer,
+  'container',
+  'd-flex',
+  'flex-column',
 );
-export const aboutMeContentClasses = classNames(
-  styles.aboutMeContent,
+export const titleContainerClasses = classNames(
+  styles.titleContainer,
   'position-relative',
   'd-flex',
   'align-items-center',
   'justify-content-center',
+);
+
+/* texto e imagem */
+export const textImageContainerClasses = classNames(
+  styles.textImageContainer,
+  'container',
+  'd-flex',
+  'flex-row',
+  'align-items-center',
+);
+
+/* texto  */
+export const textContainerClasses = classNames(
+  styles.textContainer,
 );

@@ -1,11 +1,26 @@
 :root {
-  --purple: #6c4e75;
+  --purple: rgb(108, 78, 117);
+  --pink: rgb(255, 37, 175);
+  --light-grey: #dee2e6;
 }
+
+h3 {
+text-align: center;
+margin-top: 1.5vh;
+margin-bottom: 3vh;
+}
+
+img {
+  height: 20vw;
+  width: 20vw;
+}
+
 p {
   color: var(--purple);
 }
+
 .about {
-  -webkit-text-stroke: 1px rgb(222, 226, 230);
+  -webkit-text-stroke: 1px var(--light-grey);
   color: transparent;
   font-family: 'Roboto', sans-serif;
   font-size: 7vw;
@@ -14,13 +29,10 @@ p {
   text-align: center;
 }
 
-.aboutMeContent {
-  height: 10vw;
-}
-
 .aboutMe {
   color: var(--purple);
   font-family: 'Roboto', sans-serif;
+  font-size: 2.6vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,5 +41,35 @@ p {
 
 .aboutMeContainer {
   background-color: white;
-  padding: 2rem 0;
+  min-width: 100vw; 
+}
+.imgContainer {
+  width: 20vw;
+  height: 20vw;
+}
+
+.link {
+  color: var(--pink);
+}
+
+.textGradient {
+  background: linear-gradient(90deg, var(--pink) 30%, var(--purple) 60%);
+  background-clip: text;
+  color: transparent;
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
+
+.textContainer {
+  text-align: justify;
+  margin-left: 2vw;
+  padding-left: 1vw; 
+}
+
+.titleContainer {
+  height: 9vw;
+}
+
+.year {
+  color: var(--pink);
 }
