@@ -1,9 +1,9 @@
 import {
-  aboutClasses, aboutMeClasses, aboutMeContainerClasses,
+  aboutClasses, aboutMeClasses, aboutMeContainerClasses, profilePictureClasses,
   titleContainerClasses, textImageContainerClasses, textContainerClasses,
 } from './classesNames';
 import styles from './About.module.css';
-import pictureRedHair from '../../assets/Raisa - cabelo lilás.png';
+import picturePurpleHair from '../../assets/Raisa - cabelo lilás.png';
 
 function About() {
   return (
@@ -13,12 +13,11 @@ function About() {
         <h2 className={ aboutMeClasses }>Sobre mim</h2>
       </div>
       <div className={ textImageContainerClasses }>
-        <div className={ styles.imgContainer }>
-          <img
-            src={ pictureRedHair }
-            alt="foto de perfil"
-          />
-        </div>
+        <img
+          className={ profilePictureClasses }
+          src={ picturePurpleHair }
+          alt="foto de perfil"
+        />
         <div className={ textContainerClasses }>
           <h3 className={ styles.textGradient }>Oiê! Seja bem-vinde! o/</h3>
           <p>

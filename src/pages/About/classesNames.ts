@@ -16,7 +16,15 @@ export const aboutMeContainerClasses = classNames(
   'container',
   'd-flex',
   'flex-column',
+  'align-items-center',
 );
+
+export const profilePictureClasses = classNames(
+  'rounded-circle',
+  'shadow-lg',
+  'ml-5',
+);
+
 export const titleContainerClasses = classNames(
   styles.titleContainer,
   'position-relative',
@@ -28,10 +36,6 @@ export const titleContainerClasses = classNames(
 /* texto e imagem */
 export const textImageContainerClasses = classNames(
   styles.textImageContainer,
-  'container',
-  'd-flex',
-  'flex-row',
-  'align-items-center',
 );
 
 /* texto  */
