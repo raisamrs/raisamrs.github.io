@@ -1,7 +1,7 @@
 :root {
   --purple: rgb(108, 78, 117);
   --pink: rgb(255, 37, 175);
-  --light-grey: #dee2e6;
+  --light-grey: rgb(222, 226, 230);
 }
 
 h3 {
@@ -40,6 +40,7 @@ p {
 }
 
 .aboutMeContainer {
+  border: 1px solid blue;
   background-color: white;
   min-width: 100vw; 
 }
