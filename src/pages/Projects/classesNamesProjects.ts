@@ -11,6 +11,8 @@ export const titleContainerClasses = classNames(
 
 export const projectSubtitleClasses = classNames(
   styles.projectSubtitle,
+  'position-absolute',
+  'text-uppercase',
 );
 
 export const projectTitleClasses = classNames(
