@@ -2,11 +2,12 @@ import projectsData from '../../data/projects.json';
 import pixelsArt from '../../assets/pixelsArt.png';
 import gitHubIcon from '../../assets/github-icon.svg';
 import siteIcon from '../../assets/site-icon.svg';
+import { renderDescription } from '../../helpers/renderDescription';
 import { ProjectImageType } from '../../types';
 import { cardsContainerClasses, imgProjectClasses, projectContainerClasses,
   projectCardClasses, rowCardsClasses, cardBodyClasses, projectTechContainerClasses,
   projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
-  btnGitHubClasses, btnDeployClasses,
+  btnGitHubClasses, btnDeployClasses, btnsClasses, projectTitleCardContainerClasses,
   projectTitleImgContainerClasses } from './classesNamesProjects';
 import { titleBgClasses, titleFgClasses, titleContainerClasses,
 } from '../../classesNamesApp';
@@ -39,31 +40,38 @@ function Projects() {
               </div>
               <div className={ styles.showAfter }>
                 <div className={ cardBodyClasses }>
-                  <h3 className={ projectTitleCardClasses }>{project.title}</h3>
-                  <p className={ projectDescriptionClasses }>{project.description}</p>
+                  <div className={ projectTitleCardContainerClasses }>
+                    <h3 className={ projectTitleCardClasses }>{project.title}</h3>
+                  </div>
+                  <p className={ projectDescriptionClasses }>
+                    {renderDescription(project.description)}
+                  </p>
                   <div className={ projectTechContainerClasses }>
                     {project.technologies.map((tech, j) => (
                       <span key={ j } className="badge badge-info mr-1">{tech}</span>
                     ))}
                   </div>
-                  <a
-                    href={ project.github }
-                    className={ btnGitHubClasses }
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={ gitHubIcon } alt="ícone do gitHub" />
-                    GitHub
-                  </a>
-                  <a
-                    href={ project.deploy }
-                    className={ btnDeployClasses }
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={ siteIcon } alt="ícone de site" />
-                    Visitar aplicação
-                  </a>
+                  <div className={ btnsClasses }>
+
+                    <a
+                      href={ project.github }
+                      className={ btnGitHubClasses }
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={ gitHubIcon } alt="ícone do gitHub" />
+                      Repositório GitHub
+                    </a>
+                    <a
+                      href={ project.deploy }
+                      className={ btnDeployClasses }
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={ siteIcon } alt="ícone de site" />
+                      Visitar aplicação
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

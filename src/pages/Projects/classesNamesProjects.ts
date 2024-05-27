@@ -1,6 +1,10 @@
 import classNames from 'classnames';
 import styles from './Projects.module.css';
 
+export const btnsClasses = classNames(
+  styles.btn,
+);
+
 export const btnGitHubClasses = classNames(
   styles.btnGitHub,
   'btn',
@@ -61,7 +65,6 @@ export const projectTitleCardClasses = classNames(
 
 export const rowCardsClasses = classNames(
   styles.rowCards,
-  'row',
 );
 
 export const titleContainerClasses = classNames(
@@ -70,4 +73,7 @@ export const titleContainerClasses = classNames(
 
 export const projectTitleImgContainerClasses = classNames(
   styles.projectTitleImgContainer,
+);
+export const projectTitleCardContainerClasses = classNames(
+  styles.projectTitleCardContainer,
 );
