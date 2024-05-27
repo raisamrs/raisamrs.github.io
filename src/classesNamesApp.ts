@@ -12,6 +12,13 @@ export const navLinkClasses = classNames(
   styles.navLink,
   styles.navLinkHover,
 );
+export const titleContainerClasses = classNames(
+  styles.titleContainer,
+  'position-relative',
+  'd-flex',
+  'align-items-center',
+  'justify-content-center',
+);
 
 export const titleBgClasses = classNames(
   styles.titleBg,

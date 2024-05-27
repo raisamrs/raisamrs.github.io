@@ -10,5 +10,5 @@
 body {
 	font-size: 100%;
 	list-style-type: none;
-	overflow: hidden;
+	overflow-x: hidden;
 }

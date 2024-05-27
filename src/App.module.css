@@ -5,7 +5,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow: auto;
 }
 
 #root {
@@ -24,7 +24,7 @@ html, body {
 	flex-direction: column;
 	min-height: 100vh;
 	min-width: 100vw;
-	overflow: hidden; /* Impede overflow */
+	overflow: auto; /* Impede overflow */
 }
 
 .navbar {
@@ -57,18 +57,25 @@ html, body {
   -webkit-text-stroke: 1px var(--light-grey);
   color: transparent;
   font-family: 'Roboto', sans-serif;
-  font-size: 7vw;
+  font-size: 6rem;
   font-weight: 900;
   position: relative;
   text-align: center;
 }
 
+.titleContainer {
+  height: 13vh;
+	position: relative;
+}
+
 .titleFg {
   color: var(--purple);
   font-family: 'Roboto', sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   position: absolute;
-  top: 50%;
+	top: 50%;
   left: 50%;
+	text-align: center;
   transform: translate(-50%, -50%);
+	width: 100%;
 }

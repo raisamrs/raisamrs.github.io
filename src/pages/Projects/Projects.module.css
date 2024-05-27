@@ -1,31 +1,76 @@
+:root {
+  --dark-purple: #4B0082;
+  --light-purple: #9370DB;
+  --purple: #6c4e75;
+  --light-grey: #D3D3D3;
+  --grey: #808080;
+  --dark-grey: #2F4F4F;
+  --blue: #1E90FF;
+  --light-blue: #87CEFA;
+  --white: #FFFFFF;
+  --pink: #ff25af;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.badge-info {
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+.btn-primary {
+  background-color: var(--blue);
+  border: none;
+}
+
+.btn-secondary {
+  background-color: var(--grey);
+  border: none;
+}
+
+.cardBody {
+  padding: 1.5rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .projectCard {
-  border: 1px solid wheat
+  background-color: var(--light-grey);
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
 }
 
 .projectContainer {
-  border: 1px solid red;
+  padding: 2rem;
 }
 
-.titleContainer {
-  border: 1px solid orange;
+.projectDescription {
+  color: var(--purple);
+  font-size: 1rem;
 }
 
 .projectTitle {
-  -webkit-text-stroke: 1px var(--light-grey);
-  color: transparent;
-  font-family: 'Roboto', sans-serif;
-  font-size: 7vw;
-  font-weight: 900;
-  position: relative;
-  text-align: center;
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-.projectSubtitle {
-  color: var(--purple);
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.rowCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.titleContainer {
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
 }

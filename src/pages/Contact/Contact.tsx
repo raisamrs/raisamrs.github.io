@@ -1,5 +1,6 @@
 import { useForm } from '../../helpers/formHandlers';
-import { titleBgClasses, titleFgClasses } from '../../classesNamesApp';
+import { titleBgClasses, titleFgClasses,
+  titleContainerClasses } from '../../classesNamesApp';
 
 function Contact() {
   const {
@@ -20,9 +21,9 @@ function Contact() {
   } = useForm();
   return (
     <div>
-      <div>
-        <h1 className={ titleBgClasses }>Skills</h1>
-        <h2 className={ titleFgClasses }>Skills</h2>
+      <div className={ titleContainerClasses }>
+        <h1 className={ titleBgClasses }>Contato</h1>
+        <h2 className={ titleFgClasses }>Contato</h2>
       </div>
       <form
         action="https://api.staticforms.xyz/submit"

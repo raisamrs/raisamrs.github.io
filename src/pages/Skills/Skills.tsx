@@ -1,9 +1,10 @@
-import { titleBgClasses, titleFgClasses } from '../../classesNamesApp';
+import { titleBgClasses, titleFgClasses,
+  titleContainerClasses } from '../../classesNamesApp';
 
 function Skills() {
   return (
     <div>
-      <div>
+      <div className={ titleContainerClasses }>
         <h1 className={ titleBgClasses }>Skills</h1>
         <h2 className={ titleFgClasses }>Skills</h2>
       </div>

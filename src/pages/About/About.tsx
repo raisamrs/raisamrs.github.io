@@ -1,7 +1,8 @@
-import { aboutMeContainerClasses, profilePictureClasses,
-  titleContainerClasses, textImageContainerClasses, textContainerClasses,
+import { aboutMeContainerClasses, profilePictureClasses, textImageContainerClasses,
+  textContainerClasses,
 } from './classesNamesAbout';
-import { titleBgClasses, titleFgClasses } from '../../classesNamesApp';
+import { titleBgClasses, titleFgClasses,
+  titleContainerClasses } from '../../classesNamesApp';
 import styles from './About.module.css';
 import picturePurpleHair from '../../assets/Raisa - cabelo lilás.png';
 
