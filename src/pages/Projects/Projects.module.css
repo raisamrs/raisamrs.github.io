@@ -4,7 +4,7 @@
   --purple: #6c4e75;
   --light-grey: #D3D3D3;
   --grey: #808080;
-  --dark-grey: #2F4F4F;
+  --dark-green: #2F4F4F;
   --blue: #1E90FF;
   --light-blue: #87CEFA;
   --white: #FFFFFF;
@@ -12,8 +12,8 @@
 }
 
 img {
-  width: auto;
-  height: auto;
+  height: 70vh;
+  width: 50vw;
 }
 
 .badge-info {
@@ -43,9 +43,15 @@ img {
 
 .projectCard {
   background-color: var(--light-grey);
-  border: none;
+  border: 2px dashed darkgreen;
   border-radius: 0.5rem;
+  position: relative;
   width: 100%;
+  overflow: hidden; /* Garante que o conteúdo não extrapole o card */
+}
+
+.projectCard:hover .showAfter {
+  opacity: 1; /* Torna visível ao passar o mouse */
 }
 
 .projectContainer {
@@ -57,7 +63,13 @@ img {
   font-size: 1rem;
 }
 
-.projectTitle {
+.projectTitleCard {
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.projectTitleImg {
   color: var(--pink);
   font-size: 1.25rem;
   font-weight: bold;
@@ -67,6 +79,31 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.showAfter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--dark-green);
+  transition: opacity 0.3s ease-in-out; /* Transição suave */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.showBefore img {
+  width: 100%;
+  height: auto;
+}
+
+.showBefore {
+  position: relative;
 }
 
 .titleContainer {

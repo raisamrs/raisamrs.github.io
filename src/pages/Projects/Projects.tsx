@@ -1,20 +1,18 @@
-import { useState } from 'react';
 import projectsData from '../../data/projects.json';
 import pixelsArt from '../../assets/pixelsArt.png';
 import { ProjectImageType } from '../../types';
 import { cardsContainerClasses, imgProjectClasses, projectContainerClasses,
   projectCardClasses, rowCardsClasses, cardBodyClasses, projectTechContainerClasses,
-  projectTitleClasses, projectDescriptionClasses, btnGitHubClasses, btnDeployClasses,
-} from './classesNamesProjects';
+  projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
+  btnGitHubClasses, btnDeployClasses } from './classesNamesProjects';
 import { titleBgClasses, titleFgClasses, titleContainerClasses,
 } from '../../classesNamesApp';
+import styles from './Projects.module.css';
 
 function Projects() {
   const projectImages: ProjectImageType = {
     pixelsArt,
   };
-
-  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <div className={ projectContainerClasses }>
@@ -25,43 +23,41 @@ function Projects() {
       <div className={ cardsContainerClasses }>
         <div className={ rowCardsClasses }>
           {projectsData.map((project, i) => (
-            <div
-              className={ `${projectCardClasses} ${isHovered ? 'hovered' : ''}` }
-              key={ i }
-              onMouseEnter={ () => setIsHovered(true) }
-              onMouseLeave={ () => setIsHovered(false) }
-            >
-              <img
-                className={ `${imgProjectClasses} ${isHovered ? 'hovered' : ''}` }
-                src={ projectImages[project.id] }
-                alt={ project.title }
-              />
-              <div
-                className={ `${cardBodyClasses} ${isHovered ? 'hovered' : ''}` }
-              >
-                <h5 className={ projectTitleClasses }>{project.title}</h5>
-                <p className={ projectDescriptionClasses }>{project.description}</p>
-                <div className={ projectTechContainerClasses }>
-                  {project.technologies.map((tech, j) => (
-                    <span key={ j } className="badge badge-info mr-1">{tech}</span>
-                  ))}
+            <div className={ projectCardClasses } key={ i }>
+              <div className={ styles.showBefore }>
+                <img
+                  className={ imgProjectClasses }
+                  src={ projectImages[project.id] }
+                  alt={ project.title }
+                />
+                <h3 className={ projectTitleImgClasses }>{project.title}</h3>
+              </div>
+              <div className={ styles.showAfter }>
+                <div className={ cardBodyClasses }>
+                  <h3 className={ projectTitleCardClasses }>{project.title}</h3>
+                  <p className={ projectDescriptionClasses }>{project.description}</p>
+                  <div className={ projectTechContainerClasses }>
+                    {project.technologies.map((tech, j) => (
+                      <span key={ j } className="badge badge-info mr-1">{tech}</span>
+                    ))}
+                  </div>
+                  <a
+                    href={ project.github }
+                    className={ btnGitHubClasses }
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href={ project.deploy }
+                    className={ btnDeployClasses }
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Deploy
+                  </a>
                 </div>
-                <a
-                  href={ project.github }
-                  className={ btnGitHubClasses }
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-                <a
-                  href={ project.deploy }
-                  className={ btnDeployClasses }
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Deploy
-                </a>
               </div>
             </div>
           ))}

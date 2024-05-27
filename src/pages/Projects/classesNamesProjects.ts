@@ -26,8 +26,6 @@ export const imgProjectClasses = classNames(
 );
 export const projectCardClasses = classNames(
   styles.projectCard,
-  'col-md-4',
-  'mb-4',
 );
 
 export const projectContainerClasses = classNames(
@@ -48,8 +46,12 @@ export const projectTechContainerClasses = classNames(
   'mt-2',
 );
 
-export const projectTitleClasses = classNames(
-  styles.projectTitle,
+export const projectTitleImgClasses = classNames(
+  styles.projectTitleImg,
+);
+
+export const projectTitleCardClasses = classNames(
+  styles.projectTitleCard,
 );
 
 export const rowCardsClasses = classNames(
