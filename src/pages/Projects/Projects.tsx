@@ -1,10 +1,13 @@
 import projectsData from '../../data/projects.json';
 import pixelsArt from '../../assets/pixelsArt.png';
+import gitHubIcon from '../../assets/github-icon.svg';
+import siteIcon from '../../assets/site-icon.svg';
 import { ProjectImageType } from '../../types';
 import { cardsContainerClasses, imgProjectClasses, projectContainerClasses,
   projectCardClasses, rowCardsClasses, cardBodyClasses, projectTechContainerClasses,
   projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
-  btnGitHubClasses, btnDeployClasses } from './classesNamesProjects';
+  btnGitHubClasses, btnDeployClasses,
+  projectTitleImgContainerClasses } from './classesNamesProjects';
 import { titleBgClasses, titleFgClasses, titleContainerClasses,
 } from '../../classesNamesApp';
 import styles from './Projects.module.css';
@@ -30,7 +33,9 @@ function Projects() {
                   src={ projectImages[project.id] }
                   alt={ project.title }
                 />
-                <h3 className={ projectTitleImgClasses }>{project.title}</h3>
+                <div className={ projectTitleImgContainerClasses }>
+                  <h3 className={ projectTitleImgClasses }>{project.title}</h3>
+                </div>
               </div>
               <div className={ styles.showAfter }>
                 <div className={ cardBodyClasses }>
@@ -47,6 +52,7 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer"
                   >
+                    <img src={ gitHubIcon } alt="ícone do gitHub" />
                     GitHub
                   </a>
                   <a
@@ -55,7 +61,8 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Deploy
+                    <img src={ siteIcon } alt="ícone de site" />
+                    Visitar aplicação
                   </a>
                 </div>
               </div>

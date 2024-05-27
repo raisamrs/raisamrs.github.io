@@ -2,14 +2,18 @@ import classNames from 'classnames';
 import styles from './Projects.module.css';
 
 export const btnGitHubClasses = classNames(
+  styles.btnGitHub,
   'btn',
-  'btn-primary',
+  'mx-2',
+  'btn-dark',
+  'btn-lg',
 );
 
 export const btnDeployClasses = classNames(
   'btn',
-  'btn-secondary',
-  'ml-2',
+  'btn-lg',
+  'btn-success',
+  'mx-2',
 );
 
 export const cardBodyClasses = classNames(
@@ -44,6 +48,7 @@ export const projectTechClasses = classNames(
 
 export const projectTechContainerClasses = classNames(
   'mt-2',
+  'mx-2',
 );
 
 export const projectTitleImgClasses = classNames(
@@ -61,4 +66,8 @@ export const rowCardsClasses = classNames(
 
 export const titleContainerClasses = classNames(
   styles.titleContainer,
+);
+
+export const projectTitleImgContainerClasses = classNames(
+  styles.projectTitleImgContainer,
 );
