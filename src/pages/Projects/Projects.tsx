@@ -7,8 +7,8 @@ import { ProjectImageType } from '../../types';
 import { cardsContainerClasses, imgProjectClasses, projectContainerClasses,
   projectCardClasses, rowCardsClasses, cardBodyClasses, projectTechContainerClasses,
   projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
-  btnGitHubClasses, btnDeployClasses, btnsClasses, projectTitleCardContainerClasses,
-  projectTitleImgContainerClasses } from './classesNamesProjects';
+  btnGitHubClasses, btnDeployClasses, projectTitleCardContainerClasses,
+  projectTitleImgContainerClasses, btnsContainerClasses } from './classesNamesProjects';
 import { titleBgClasses, titleFgClasses, titleContainerClasses,
 } from '../../classesNamesApp';
 import styles from './Projects.module.css';
@@ -51,7 +51,7 @@ function Projects() {
                       <span key={ j } className="badge badge-info mr-1">{tech}</span>
                     ))}
                   </div>
-                  <div className={ btnsClasses }>
+                  <div className={ btnsContainerClasses }>
 
                     <a
                       href={ project.github }

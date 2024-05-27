@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import styles from './Projects.module.css';
 
-export const btnsClasses = classNames(
-  styles.btn,
+export const btnsContainerClasses = classNames(
+  styles.btnsContainer,
 );
 
 export const btnGitHubClasses = classNames(

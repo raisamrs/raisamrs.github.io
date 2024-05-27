@@ -2,10 +2,12 @@
   --dark-purple: #5f3165;
   --purple: #6c4e75;
   --light-grey: #D3D3D3;
-  --light-pink:#cc77ad;
+  --light-pink:#dd50a9e2;
   --grey: #808080;
   --dark-grey: #1d1d1d;
   --pink: #ff25af;
+  --pink-2: #c02386;
+
 }
 
 a img {
@@ -23,9 +25,10 @@ h3 {
   color: var(--white);
 }
 
-.btn {
+.btnsContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .btn-secondary {
@@ -45,7 +48,7 @@ h3 {
 
 .highlight {
   font-style: italic;
-  color: var(--dark-grey);
+  color: var(--lime-green);
 }
 
 .projectCard {
@@ -73,7 +76,7 @@ h3 {
 
 .projectTitleCard {
   padding-left: 0.6rem;
-  color: var(--light-pink);
+  color: var(--pink-2);
   font-size: 1.25rem;
   font-weight: bold;
   margin: 0;
@@ -84,13 +87,13 @@ h3 {
 
 .projectTitleImg {
   padding: 0.6rem;
-  color: var(--light-pink);
+  color: var(--light-grey);
   font-size: 1.25rem;
   font-weight: bold;
 }
 
 .projectTitleImgContainer {
-  background-color: var(--dark-purple);
+  background-color: var(--purple);
   border-top-right-radius: 4rem;
   height: 3rem;
   width: 100%;
@@ -109,7 +112,7 @@ h3 {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: var(--purple);
+  background-color: var(--dark-purple);
   border-top-right-radius: 4rem;
   transition: opacity 0.3s ease-in-out; /* Transição suave */
   display: flex;
