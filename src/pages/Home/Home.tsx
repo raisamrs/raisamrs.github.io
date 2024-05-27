@@ -6,8 +6,8 @@ import {
   socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
 } from './classesNamesHome';
 import profilePicture from '../../assets/Raisa - cabelo vermelho.jpg';
-import githubIcon from '../../assets/icons8-github.svg';
-import linkedinIcon from '../../assets/icons8-linkedin-500.svg';
+import githubIcon from '../../assets/github-icon.svg';
+import linkedinIcon from '../../assets/linkedin-icon.svg';
 import styles from './Home.module.css';
 
 function Home() {
