@@ -17,7 +17,10 @@ html, body {
   --pink: #ff25af;
   --light-grey: #dee2e6;
 	--grey: #808080;
-	--lime-green:  rgb(179, 241, 44);
+	--lime-green: #b3f12c;
+	--light-violet: #CF9FFF;
+	--light-violet-hover: #a870e0;
+	--pale-violet: #CCCCFF;
 }
 
 .mainContainer {
