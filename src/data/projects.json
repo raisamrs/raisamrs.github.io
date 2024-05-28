@@ -3,9 +3,25 @@
     "id": "pixelsArt",
     "title": "Pixels Art",
     "description": "O Pixels Art é um editor de arte com pixels e sua dimensão é 5 x 5.😊 Ele já vem com 4 cores definidas, mas calma: sempre que clicar no botão Gerar cores aleatórias, você terá outras 4 novas cores para usar da forma que preferir! Ah, e se você não gostou da sua arte ou quer fazer outra, é só clicar em Limpar quadro.",
-    "technologies": ["JavaScript", "HTML", "CSS"],
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "logo": "javascript-icon.svg"
+      },
+      {
+        "name": "HTML",
+        "logo": "html-icon.svg"
+      },
+      {
+        "name": "CSS",
+        "logo": "css-icon.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "logo": "bootstrap-icon.svg"
+      }
+    ],
     "github": "https://github.com/raisamrs/pixels-art",
     "deploy": "https://raisamrs.github.io/pixels-art/"
   }
-
 ]
