@@ -2,16 +2,28 @@ import projectsData from '../../data/projects.json';
 import pixelsArt from '../../assets/pixelsArt.png';
 import gitHubIcon from '../../assets/github-icon.svg';
 import siteIcon from '../../assets/site-icon.svg';
+import javascriptIcon from '../../assets/javascript-icon.svg';
+import htmlIcon from '../../assets/html-icon.svg';
+import cssIcon from '../../assets/css-icon.svg';
+import bootstrapIcon from '../../assets/bootstrap-icon.svg';
 import { renderDescription } from '../../helpers/renderDescription';
 import { ProjectImageType } from '../../types';
 import { cardsContainerClasses, imgProjectClasses, projectContainerClasses,
   projectCardClasses, rowCardsClasses, cardBodyClasses, projectTechContainerClasses,
   projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
   btnGitHubClasses, btnDeployClasses, projectTitleCardContainerClasses,
-  projectTitleImgContainerClasses, btnsContainerClasses } from './classesNamesProjects';
+  projectTitleImgContainerClasses, btnsContainerClasses, iconsClasses,
+  projectTechClasses, techAndLogoContainerClasses } from './classesNamesProjects';
 import { titleBgClasses, titleFgClasses, titleContainerClasses,
 } from '../../classesNamesApp';
 import styles from './Projects.module.css';
+
+const techLogos: { [key: string]: string } = {
+  'javascript-icon.svg': javascriptIcon,
+  'html-icon.svg': htmlIcon,
+  'css-icon.svg': cssIcon,
+  'bootstrap-icon.svg': bootstrapIcon,
+};
 
 function Projects() {
   const projectImages: ProjectImageType = {
@@ -48,7 +60,14 @@ function Projects() {
                   </p>
                   <div className={ projectTechContainerClasses }>
                     {project.technologies.map((tech, j) => (
-                      <span key={ j } className="badge badge-info mr-1">{tech}</span>
+                      <div key={ j } className={ techAndLogoContainerClasses }>
+                        <img
+                          src={ techLogos[tech.logo] }
+                          alt={ `${tech.name} logo` }
+                          className={ iconsClasses }
+                        />
+                        <span className={ projectTechClasses }>{tech.name}</span>
+                      </div>
                     ))}
                   </div>
                   <div className={ btnsContainerClasses }>

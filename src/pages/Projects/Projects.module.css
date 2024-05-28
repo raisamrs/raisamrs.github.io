@@ -25,21 +25,29 @@ h3 {
   color: var(--white);
 }
 
+.btn {
+  background-color: var(--light-violet);
+  color: var(--dark-purple);
+  margin: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--light-violet-hover);
+  color: var(--dark-purple);
+}
+
 .btnsContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.btn-secondary {
-  background-color: var(--light-blue);
-  border: none;
+  align-items: start;
+  margin-left: 1rem;
 }
 
 .cardBody {
   display: flex;
   flex-direction: column;
 }
+
 .cardsContainer {
   display: flex;
   flex-direction: column;
@@ -48,7 +56,12 @@ h3 {
 
 .highlight {
   font-style: italic;
-  color: var(--lime-green);
+  color: var(--pink);
+}
+
+.icons {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .projectCard {
@@ -74,9 +87,23 @@ h3 {
   padding: 1.5rem;
 }
 
+.projectTech {
+  border-radius: 0.4rem;
+  font-size: 1.0rem;
+  margin: 0.5rem 0.2rem;
+}
+
+.projectTechContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
 .projectTitleCard {
   padding-left: 0.6rem;
-  color: var(--pink-2);
+  color: var(--light-violet);
   font-size: 1.25rem;
   font-weight: bold;
   margin: 0;
@@ -87,7 +114,7 @@ h3 {
 
 .projectTitleImg {
   padding: 0.6rem;
-  color: var(--light-grey);
+  color: var(--pale-violet);
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -126,6 +153,17 @@ h3 {
 
 .showBefore {
   position: relative;
+}
+
+.techAndLogoContainer {
+  align-items: center;
+  display: flex;
+  background: white;
+  border: 1px solid var(--light-pink);
+  border-radius: 0.5rem;
+  color: var(--light-pink);
+  justify-content: center;
+  width: 9rem;
 }
 
 .titleContainer {

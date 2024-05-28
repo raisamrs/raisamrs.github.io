@@ -6,18 +6,15 @@ export const btnsContainerClasses = classNames(
 );
 
 export const btnGitHubClasses = classNames(
-  styles.btnGitHub,
+  styles.btn,
   'btn',
-  'mx-2',
-  'btn-dark',
   'btn-lg',
 );
 
 export const btnDeployClasses = classNames(
+  styles.btn,
   'btn',
   'btn-lg',
-  'btn-success',
-  'mx-2',
 );
 
 export const cardBodyClasses = classNames(
@@ -29,9 +26,14 @@ export const cardsContainerClasses = classNames(
   'container',
 );
 
+export const iconsClasses = classNames(
+  styles.icons,
+);
+
 export const imgProjectClasses = classNames(
   'card-img-top',
 );
+
 export const projectCardClasses = classNames(
   styles.projectCard,
 );
@@ -45,35 +47,37 @@ export const projectDescriptionClasses = classNames(
 );
 
 export const projectTechClasses = classNames(
-  'badge',
-  'badge-info',
-  'mr-1',
+  styles.projectTech,
 );
 
 export const projectTechContainerClasses = classNames(
-  'mt-2',
-  'mx-2',
-);
-
-export const projectTitleImgClasses = classNames(
-  styles.projectTitleImg,
+  styles.projectTechContainer,
 );
 
 export const projectTitleCardClasses = classNames(
   styles.projectTitleCard,
 );
 
-export const rowCardsClasses = classNames(
-  styles.rowCards,
+export const projectTitleCardContainerClasses = classNames(
+  styles.projectTitleCardContainer,
 );
 
-export const titleContainerClasses = classNames(
-  styles.titleContainer,
+export const projectTitleImgClasses = classNames(
+  styles.projectTitleImg,
 );
 
 export const projectTitleImgContainerClasses = classNames(
   styles.projectTitleImgContainer,
 );
-export const projectTitleCardContainerClasses = classNames(
-  styles.projectTitleCardContainer,
+
+export const rowCardsClasses = classNames(
+  styles.rowCards,
+);
+
+export const techAndLogoContainerClasses = classNames(
+  styles.techAndLogoContainer,
+);
+
+export const titleContainerClasses = classNames(
+  styles.titleContainer,
 );
