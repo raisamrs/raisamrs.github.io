@@ -71,6 +71,9 @@
   width: 7vh;
 }
 
+.socialNetWork:hover {
+  height: 8.5vh;
+}
 .textContainer {
   align-items: center;
   display: flex;
