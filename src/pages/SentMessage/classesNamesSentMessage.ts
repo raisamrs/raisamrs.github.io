@@ -8,8 +8,10 @@ export const sucessMsgClasses = classNames(
 export const sentMsgContainerClasses = classNames(
   'd-flex',
   'flex-column',
-  'justify-content-center',
+  'justify-content-start',
   'align-items-center',
   'align-content-center',
+  'my-5',
+  'py-5',
   styles.sentMessageContainer,
 );
