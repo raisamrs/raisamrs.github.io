@@ -53,7 +53,7 @@ html, body {
 .navLinkHover {
 	&:hover {
 		color: var(--pink);
-		transform: scale(1.1);
+		font-weight: 700;
 	}
 } 
 
