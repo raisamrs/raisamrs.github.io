@@ -3,7 +3,6 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
-import Skills from './pages/Skills/Skills';
 import SentMessage from './pages/SentMessage/SentMessage';
 import styles from './App.module.css';
 import { navBarClasses, navLinkClasses } from './classesNamesApp';
@@ -32,12 +31,6 @@ function App() {
           Projetos
         </NavLink>
         <NavLink
-          to="/skills"
-          className={ navLinkClasses }
-        >
-          Skills
-        </NavLink>
-        <NavLink
           to="/contato"
           className={ navLinkClasses }
         >
@@ -48,7 +41,6 @@ function App() {
         <Route path="/" element={ <Home /> } />
         <Route path="/sobre-mim" element={ <About /> } />
         <Route path="/projetos" element={ <Projects /> } />
-        <Route path="/skills" element={ <Skills /> } />
         <Route path="/contato" element={ <Contact /> } />
         <Route path="/sent-message" element={ <SentMessage /> } />
 
