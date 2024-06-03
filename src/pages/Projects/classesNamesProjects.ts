@@ -23,7 +23,6 @@ export const cardBodyClasses = classNames(
 
 export const cardsContainerClasses = classNames(
   styles.cardsContainer,
-  'container',
 );
 
 export const iconsClasses = classNames(
@@ -70,8 +69,8 @@ export const projectTitleImgContainerClasses = classNames(
   styles.projectTitleImgContainer,
 );
 
-export const rowCardsClasses = classNames(
-  styles.rowCards,
+export const columnCardsClasses = classNames(
+  styles.columnCards,
 );
 
 export const techAndLogoContainerClasses = classNames(

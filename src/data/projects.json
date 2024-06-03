@@ -2,7 +2,7 @@
   {
     "id": "pixelsArt",
     "title": "Pixels Art",
-    "description": "O Pixels Art é um editor de arte com pixels e sua dimensão é 5 x 5.😊 Ele já vem com 4 cores definidas, mas calma: sempre que clicar no botão Gerar cores aleatórias, você terá outras 4 novas cores para usar da forma que preferir! Ah, e se você não gostou da sua arte ou quer fazer outra, é só clicar em Limpar quadro! 😉",
+    "description": "O Pixels Art é um editor de arte com pixels e sua dimensão é 10 x 10.😊 Ele já vem com 4 cores definidas, mas calma: sempre que clicar no botão Gerar cores aleatórias, você terá outras 4 novas cores para usar da forma que preferir! Ah, e se você não gostou da sua arte ou quer fazer outra, é só clicar em Limpar quadro! 😉",
     "technologies": [
       {
         "name": "JavaScript",
@@ -23,5 +23,30 @@
     ],
     "github": "https://github.com/raisamrs/pixels-art",
     "deploy": "https://raisamrs.github.io/pixels-art/"
+  },
+  {
+    "id": "tryberCalendar",
+    "title": "Tryber Calendar",
+    "description": "O Tryber Calendar é um calendário destinado aos alunos da Trybe, onde eles podem ver destacar feriados e as sextas-feiras do mês, marcar dias destinados a projetos, dias destinados a exercícios e ainda adicionar outros tipos de tarefas! Bem funcional pra quem tem uma rotina cheia, né?",
+    "technologies": [
+      {
+        "name": "JavaScript",
+        "logo": "javascript-icon.svg"
+      },
+      {
+        "name": "HTML",
+        "logo": "html-icon.svg"
+      },
+      {
+        "name": "CSS",
+        "logo": "css-icon.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "logo": "bootstrap-icon.svg"
+      }
+    ],
+    "github": "https://github.com/raisamrs/tryber-calendar/",
+    "deploy": "https://raisamrs.github.io/tryber-calendar/"
   }
 ]

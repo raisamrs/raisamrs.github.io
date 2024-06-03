@@ -1,5 +1,6 @@
 import projectsData from '../../data/projects.json';
 import pixelsArt from '../../assets/pixelsArt.png';
+import tryberCalendar from '../../assets/tryberCalendar.png';
 import gitHubIcon from '../../assets/github-icon.svg';
 import siteIcon from '../../assets/site-icon.svg';
 import javascriptIcon from '../../assets/javascript-icon.svg';
@@ -8,13 +9,16 @@ import cssIcon from '../../assets/css-icon.svg';
 import bootstrapIcon from '../../assets/bootstrap-icon.svg';
 import { renderDescription } from '../../helpers/renderDescription';
 import { ProjectImageType } from '../../types';
-import { cardsContainerClasses, imgProjectClasses, projectContainerClasses,
-  projectCardClasses, rowCardsClasses, cardBodyClasses, projectTechContainerClasses,
+import {
+  cardsContainerClasses, imgProjectClasses, projectContainerClasses,
+  projectCardClasses, columnCardsClasses, cardBodyClasses, projectTechContainerClasses,
   projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
   btnGitHubClasses, btnDeployClasses, projectTitleCardContainerClasses,
   projectTitleImgContainerClasses, btnsContainerClasses, iconsClasses,
-  projectTechClasses, techAndLogoContainerClasses } from './classesNamesProjects';
-import { titleBgClasses, titleFgClasses, titleContainerClasses,
+  projectTechClasses, techAndLogoContainerClasses,
+} from './classesNamesProjects';
+import {
+  titleBgClasses, titleFgClasses, titleContainerClasses,
 } from '../../classesNamesApp';
 import styles from './Projects.module.css';
 
@@ -27,7 +31,7 @@ const techLogos: { [key: string]: string } = {
 
 function Projects() {
   const projectImages: ProjectImageType = {
-    pixelsArt,
+    pixelsArt, tryberCalendar,
   };
 
   return (
@@ -37,7 +41,7 @@ function Projects() {
         <h2 className={ titleFgClasses }>Projetos</h2>
       </div>
       <div className={ cardsContainerClasses }>
-        <div className={ rowCardsClasses }>
+        <div className={ columnCardsClasses }>
           {projectsData.map((project, i) => (
             <div className={ projectCardClasses } key={ i }>
               <div className={ styles.showBefore }>
