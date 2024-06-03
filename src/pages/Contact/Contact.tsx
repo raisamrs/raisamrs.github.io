@@ -49,13 +49,13 @@ function Contact() {
                 id="name"
                 className={ nameClasses }
                 type="text"
-                name="name"
+                name="$Nome"
                 placeholder="Ex.: Natália"
                 value={ name }
                 onChange={ handleNameChange }
                 required
-                min="5"
-                max="60"
+                minLength={ 5 }
+                maxLength={ 60 }
               />
             </div>
           </div>
@@ -66,13 +66,13 @@ function Contact() {
                 id="last-name"
                 className={ lastNameClasses }
                 type="text"
-                name="last-name"
+                name="$Sobrenome"
                 placeholder="Ex.: Abreu"
                 value={ lastName }
                 onChange={ handleLastNameChange }
                 required
-                min="5"
-                max="60"
+                minLength={ 5 }
+                maxLength={ 60 }
               />
             </div>
           </div>
@@ -87,12 +87,12 @@ function Contact() {
                 id="email"
                 className={ emailClasses }
                 type="text"
-                name="email"
+                name="$E-mail"
                 placeholder="Ex: email@dominio.com.br"
                 value={ email }
                 onChange={ handleEmailChange }
                 required
-                max="70"
+                maxLength={ 70 }
               />
             </div>
           </div>
@@ -104,12 +104,12 @@ function Contact() {
               <input
                 className={ subjectClasses }
                 type="text"
-                name="subject"
+                name="$Assunto"
                 placeholder="Ex: Criação de site para minha loja de roupas"
                 value={ subject }
                 onChange={ handleSubjectChange }
                 required
-                max="1000"
+                maxLength={ 1000 }
               />
             </div>
           </div>
@@ -118,7 +118,7 @@ function Contact() {
             <div className={ formGroupCol12Classes } />
             <textarea
               className={ messageClasses }
-              name="message"
+              name="$Mensagem"
               cols={ 30 }
               rows={ 10 }
               placeholder="Detalhe um pouco mais o que deseja :)"

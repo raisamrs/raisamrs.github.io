@@ -6,6 +6,10 @@
 	--lime-green:#b3f12c;
 }
 
+button {
+  cursor: not-allowed;
+}
+
 label {
   color: var(--dark-purple);
   font-size: 1.3rem;

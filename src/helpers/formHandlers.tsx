@@ -1,5 +1,5 @@
 // formHandlers.tsx
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { isNameValid, isLastNameValid, isEmailValid } from './formValidations';
 
 export function useForm() {

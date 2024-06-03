@@ -3,6 +3,7 @@ import styles from './Contact.module.css';
 
 const formControl = 'form-control';
 const formRow = 'form-row';
+
 export const containerFormClasses = classNames(
   'container',
   'mt-4',
@@ -43,6 +44,7 @@ export const messageClasses = classNames(
 );
 
 export const btnClasses = classNames(
+  styles.button,
   'btn',
   'btn-success',
 );
