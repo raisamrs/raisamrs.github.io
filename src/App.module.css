@@ -31,12 +31,38 @@ html, body {
 	overflow: auto; /* Impede overflow */
 }
 
+.menuButton {
+  display: none; /* Esconda o botão em telas maiores */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--purple);
+  cursor: pointer;
+}
+/* Menu horizontal em telas maiores */
+.navbar > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuOpen {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuClosed {
+  display: none;
+}
+
 .navbar {
 	box-shadow: 0 4px 2px -2px var(--grey); 
 	background-color: var(--purple);
 	color: var(--purple);
 	display: flex;
-	padding-bottom: 3vh; /* Corrige o valor de padding */
+	height: 200px;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 2vh; /* Corrige o valor de padding */
 	gap: 3%;
 }
 
@@ -82,4 +108,18 @@ html, body {
 	text-align: center;
   transform: translate(-50%, -50%);
 	width: 100%;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block; /* Mostre o botão em telas menores */
+  }
+
+  .navbar > div {
+    display: none; /* Esconda o menu em telas menores */
+  }
+
+  .menuOpen {
+    display: flex; /* Mostre o menu quando estiver aberto */
+  }
 }

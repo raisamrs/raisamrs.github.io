@@ -1,5 +1,14 @@
+// src/classesNamesApp.ts
 import classNames from 'classnames';
 import styles from './App.module.css';
+
+export const mainContainerClasses = classNames(
+  styles.mainContainer,
+);
+
+export const menuButtonClasses = classNames(
+  styles.menuButton,
+);
 
 export const navBarClasses = classNames(
   styles.navbar,
