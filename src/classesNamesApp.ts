@@ -2,6 +2,11 @@
 import classNames from 'classnames';
 import styles from './App.module.css';
 
+export const closeButtonClasses = classNames(
+  styles.closeButton,
+  styles.roundedBorder,
+);
+
 export const mainContainerClasses = classNames(
   styles.mainContainer,
 );

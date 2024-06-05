@@ -9,6 +9,7 @@ import styles from './App.module.css';
 import {
   navBarClasses, navLinkClasses, mainContainerClasses,
   menuButtonClasses,
+  closeButtonClasses,
 } from './classesNamesApp';
 
 function App() {
@@ -45,6 +46,15 @@ function App() {
           </button>
         )}
         <div className={ menuClass }>
+          {isMobile && (
+
+            <button
+              className={ closeButtonClasses }
+              onClick={ () => setMenuOpen(false) }
+            >
+              &times;
+            </button>
+          )}
           <NavLink
             to="/"
             end

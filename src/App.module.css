@@ -15,7 +15,8 @@ html, body {
 :root {
   --purple: #6c4e75;
   --pink: #ff25af;
-  --light-grey: #dee2e6;
+	--light-grey-1: #dee2e69d;
+  --light-grey-2: #b7babd;
 	--grey: #808080;
 	--lime-green: #b3f12c;
 	--light-violet: #CF9FFF;
@@ -28,18 +29,18 @@ html, body {
 	flex-direction: column;
 	min-height: 100vh;
 	min-width: 100vw;
-	overflow: auto; /* Impede overflow */
+	overflow: auto;
 }
 
 .menuButton {
-  display: none; /* Esconda o botão em telas maiores */
+  display: none; 
   background: none;
   border: none;
   font-size: 2rem;
   color: var(--purple);
   cursor: pointer;
 }
-/* Menu horizontal em telas maiores */
+
 .navbar > div {
   display: flex;
   flex-direction: row;
@@ -62,7 +63,7 @@ html, body {
 	height: 5rem;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 2vh; /* Corrige o valor de padding */
+	padding-bottom: 2vh; 
 	gap: 3%;
 }
 
@@ -111,16 +112,51 @@ html, body {
 }
 
 @media (max-width: 768px) {
+
+	.closeButton {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		border-radius: 1rem;
+		font-size: 2rem;
+		color: var(--purple);
+		cursor: pointer;
+	}
+
   .menuButton {
-    display: block; /* Mostre o botão em telas menores */
+    display: block;
   }
 
   .navbar > div {
-    display: none; /* Esconda o menu em telas menores */
+    display: none;
   }
 
   .menuOpen {
     display: flex ! important; 
-		flex-direction: column !important;/* Mostre o menu quando estiver aberto */
+		flex-direction: column !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		backdrop-filter: blur(10px);
+		background-color: rgba(255, 255, 255, 0.5);
+		z-index: 1000; 
   }
+
+	.menuOpen a {
+		font-size: 1.5rem;
+		text-align: center;
+		width: 100%;
+	}
+	.roundedBorder {
+		width: 4rem;
+		height: 4rem;
+		background-color: var(--light-grey-1);
+		clip-path: circle(40%);
+	}
+
+	.roundedBorder:hover {
+		background-color: var(--light-grey-2);
+	}
 }
