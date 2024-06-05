@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import classNames from 'classnames';
 import {
   myNameClasses, professionClasses, helloWorldClasses, iAmClasses, imgProfileClasses,
-  textContainerClasses, homeContainerClasses,
+  textContainerClasses, homeContainerClasses, imgContainerClasses,
   socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
 } from './classesNamesHome';
 import profilePicture from '../../assets/Raisa - cabelo vermelho.jpg';
@@ -16,6 +16,13 @@ function Home() {
   const fullText = '< Desenvolvedora Web Front-End />';
   const speed = 100;
   const indexRef = useRef(0);
+
+  useEffect(() => {
+    document.body.classList.add(styles.bodyHome);
+    return () => {
+      document.body.classList.remove(styles.bodyHome);
+    };
+  }, []);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -39,7 +46,7 @@ function Home() {
   return (
     <div className={ homeContainerClasses }>
       <div className={ textImageContainerClasses }>
-        <div>
+        <div className={ imgContainerClasses }>
           <img
             className={ imgProfileClasses }
             src={ profilePicture }
