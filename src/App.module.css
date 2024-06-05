@@ -47,7 +47,7 @@ html, body {
 
 .menuOpen {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .menuClosed {
@@ -59,7 +59,7 @@ html, body {
 	background-color: var(--purple);
 	color: var(--purple);
 	display: flex;
-	height: 200px;
+	height: 5rem;
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 2vh; /* Corrige o valor de padding */
@@ -120,6 +120,7 @@ html, body {
   }
 
   .menuOpen {
-    display: flex; /* Mostre o menu quando estiver aberto */
+    display: flex ! important; 
+		flex-direction: column !important;/* Mostre o menu quando estiver aberto */
   }
 }

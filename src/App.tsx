@@ -28,10 +28,7 @@ function App() {
     setMenuOpen((prevState) => !prevState);
   };
 
-  let menuClass = '';
-  if (isMobile) {
-    menuClass = menuOpen ? styles.menuOpen : styles.menuClosed;
-  }
+  const menuClass = menuOpen ? styles.menuOpen : styles.menuClosed;
 
   return (
     <div className={ mainContainerClasses }>
@@ -40,7 +37,9 @@ function App() {
 
           <button
             className={ menuButtonClasses }
-            onClick={ toggleMenu }
+            onClick={ () => {
+              toggleMenu();
+            } }
           >
             ☰
           </button>
