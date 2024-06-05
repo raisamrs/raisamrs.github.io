@@ -4,6 +4,7 @@ import {
   myNameClasses, professionClasses, helloWorldClasses, iAmClasses, imgProfileClasses,
   textContainerClasses, homeContainerClasses, imgContainerClasses,
   socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
+  linkedInContainerClasses, gitHubContainerClasses,
 } from './classesNamesHome';
 import profilePicture from '../../assets/Raisa - cabelo vermelho.jpg';
 import githubIcon from '../../assets/github-icon.svg';
@@ -21,7 +22,8 @@ function Home() {
     document.body.classList.add(styles.bodyHome);
 
     const navbar = document.getElementById('navbar');
-    if (navbar) {
+    const isMobile = window.innerWidth <= 768;
+    if (navbar && isMobile) {
       navbar.classList.remove('bg-light');
       navbar.classList.add(styles.navbarHome);
     }
@@ -84,28 +86,33 @@ function Home() {
             />
           </h3>
           <div className={ socialNetWorksContainerClasses }>
-            <a
-              href="https://www.linkedin.com/in/raisamrs/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className={ socialNetWorkClasses }
-                src={ linkedinIcon }
-                alt="link para perfil do LinkedIn"
-              />
-            </a>
-            <a
-              href="https://github.com/raisamrs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className={ socialNetWorkClasses }
-                src={ githubIcon }
-                alt="link para perfil do GitHub"
-              />
-            </a>
+            <div className={ linkedInContainerClasses }>
+              <a
+                href="https://www.linkedin.com/in/raisamrs/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={ socialNetWorkClasses }
+                  src={ linkedinIcon }
+                  alt="link para perfil do LinkedIn"
+                />
+              </a>
+            </div>
+            <div className={ gitHubContainerClasses }>
+
+              <a
+                href="https://github.com/raisamrs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={ socialNetWorkClasses }
+                  src={ githubIcon }
+                  alt="link para perfil do GitHub"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

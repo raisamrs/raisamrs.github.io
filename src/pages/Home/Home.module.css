@@ -1,27 +1,26 @@
 :root {
-  --purple: #6c4e75;
-  --pink: #ff25af;
-  --light-grey: #dee2e6;
-	--grey: #808080;
-	--lime-green:#b3f12c;
+    --grey: #808080;
+    --light-grey: #dee2e6;
+    --light-grey-1: #dee2e69d;
+    --light-grey-2: #b7babd;
+    --light-violet: #CF9FFF;
+    --light-violet-hover: #a870e0;
+    --lime-green: #b3f12c;
+    --pale-violet: #CCCCFF;
+    --pink: #ff25af;
+    --purple: #6c4e75;
 }
+
 
 .bodyHome {
   background-color: var(--purple);
+  height: 100vh;
 }
 
 @keyframes blink {
   50% {
     visibility: hidden;
   }
-}
-.imgContainer {
-  border: 1px solid red;
-}
-
-.imgProfile {
-  height: 24vw;
-  width: 24vw;
 }
 
 .cursor {
@@ -32,10 +31,21 @@
   width: 0.3vw;
 }
 
+.gitHubContainer , .linkedInContainer {
+  border: 1px solid orange;
+  height: 2rem;
+  width: 2rem;
+}
+
+.gitHubContainer:hover , .linkedInContainer:hover {
+  background: linear-gradient(60deg, var(--pink), var(--light-violet-hover));
+}
+
 .helloWorld {
+  border: 1px solid orange;
   color: var(--lime-green);
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 4vw;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -50,16 +60,32 @@
   min-height: 100%;
   max-width: 100vw;
 }
+
 .iAm {
+  border: 1px solid black;
   color: white;
-  font-size: 3vw;
+  font-size: 1rem;
   font-weight: 300;
 }
 
+.imgContainer {
+  border: 1px solid red;
+}
+
+.imgProfile {
+  height: 40vw;
+  width: 40vw;
+}
+
+.menuButtonHome {
+  color: var(--light-grey);
+}
+
 .myName {
+  border: 1px solid black;
   -webkit-text-stroke: 1px #ffffff;
   color: transparent;
-  font-size: 7vw;
+  font-size: 2.8rem;
   font-weight: 900;
   text-align: center;
 }
@@ -68,44 +94,30 @@
   color: var(--purple);
 }
 
-.menuButtonHome {
-  color: var(--light-grey);
-}
-
 .socialNetWorksContainer {
-  height: 10vh;
-  margin: 4vw 0;
+  border: 1px solid black;
+  gap: 4%;
+  height: auto;
   width: 100%;
-}
-
-.socialNetWork {
-  height: 7vh;
-  margin-top: 3vh;
-  padding-top: 2vh;
-  width: 7vh;
-}
-
-.socialNetWork:hover {
-  height: 8.5vh;
 }
 
 .textContainer {
   border: 1px solid black;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 3%;
+  height: 70%;
 }
 
-.textImageContainer{
+.textImageContainer {
   border: 1px solid lightblue;
-  height: 100%;
+  gap: 6%;
+  height: 82vh;
 }
 
 .typedText {
+  border: 1px solid var(--pale-violet);
   color: white;
   display: inline-block;
-  font-size: 3vw;
+  font-size: 1rem;
   font-weight: 300;
   position: relative;
 }
