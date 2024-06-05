@@ -64,6 +64,14 @@
   text-align: center;
 }
 
+.navbarHome {
+  color: var(--purple);
+}
+
+.menuButtonHome {
+  color: var(--light-grey);
+}
+
 .socialNetWorksContainer {
   height: 10vh;
   margin: 4vw 0;

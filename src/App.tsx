@@ -33,10 +33,14 @@ function App() {
 
   return (
     <div className={ mainContainerClasses }>
-      <nav className={ navBarClasses }>
+      <nav
+        className={ navBarClasses }
+        id="navbar"
+      >
         {isMobile && (
 
           <button
+            id="menuButton"
             className={ menuButtonClasses }
             onClick={ () => {
               toggleMenu();
