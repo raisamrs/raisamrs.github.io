@@ -1,0 +1,18 @@
+:root {
+  --purple: #6c4e75;
+  --pink: #ff25af;
+  --light-grey: #dee2e6;
+	--grey: #808080;
+	--lime-green:#b3f12c;
+  --dark-green: #193b13;
+}
+
+button {
+  cursor: not-allowed;
+}
+
+label {
+  color: var(--dark-purple);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
