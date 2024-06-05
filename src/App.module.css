@@ -39,6 +39,7 @@ html, body {
   font-size: 2rem;
   color: var(--purple);
   cursor: pointer;
+	margin-left: auto;
 }
 
 .navbar > div {
@@ -56,15 +57,17 @@ html, body {
 }
 
 .navbar {
-	box-shadow: 0 4px 2px -2px var(--grey); 
+	align-items: center;
 	background-color: var(--purple);
+	box-shadow: 0 4px 2px -2px var(--grey); 
 	color: var(--purple);
 	display: flex;
+	gap: 3%;
 	height: 5rem;
 	justify-content: space-between;
-	align-items: center;
+	overflow: hidden;
 	padding-bottom: 2vh; 
-	gap: 3%;
+	width: 100%;
 }
 
 .navLink {
@@ -124,7 +127,9 @@ html, body {
 	}
 
   .menuButton {
-    display: block;
+    display: inline-block;
+		position: relative;
+		right: 2rem;
   }
 
   .navbar > div {
