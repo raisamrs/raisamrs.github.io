@@ -19,34 +19,6 @@ function Home() {
   const indexRef = useRef(0);
 
   useEffect(() => {
-    document.body.classList.add(styles.bodyHome);
-
-    const navbar = document.getElementById('navbar');
-    const isMobile = window.innerWidth <= 768;
-    if (navbar && isMobile) {
-      navbar.classList.remove('bg-light');
-      navbar.classList.add(styles.navbarHome);
-    }
-
-    const menuButton = document.getElementById('menuButton');
-    if (menuButton) {
-      menuButton.classList.add(styles.menuButtonHome);
-    }
-
-    return () => {
-      document.body.classList.remove(styles.bodyHome);
-      if (navbar) {
-        navbar.classList.remove(styles.navbarHome);
-        navbar.classList.add('bg-light');
-      }
-
-      if (menuButton) {
-        menuButton.classList.remove(styles.menuButtonHome);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
     const intervalId = setInterval(() => {
       const i = indexRef.current;
       if (i < fullText.length) {
