@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import classNames from 'classnames';
 import {
-  myNameClasses, professionClasses, helloWorldClasses, iAmClasses, imgProfileClasses,
+  myNameClasses, typedTextClasses, helloWorldClasses, iAmClasses, imgProfileClasses,
   textContainerClasses, homeContainerClasses, imgContainerClasses,
   socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
   linkedInContainerClasses, gitHubContainerClasses,
@@ -51,7 +51,7 @@ function Home() {
           <h2 className={ helloWorldClasses }>&lt; Olá, Mundo! /&gt;</h2>
           <h3 className={ iAmClasses }>Eu sou</h3>
           <h1 className={ myNameClasses }>Raisa Moreno</h1>
-          <h3 className={ professionClasses }>
+          <h3 className={ typedTextClasses }>
             {text}
             <span
               className={ classNames(styles.cursor, { [styles.hidden]: !showCursor }) }

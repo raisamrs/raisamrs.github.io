@@ -16,33 +16,35 @@ export const gitHubContainerClasses = classNames(
 export const helloWorldClasses = classNames(
   styles.helloWorld,
   'font-weight-normal',
-  'my-3',
+  'my-lg-3',
+  'py-lg-3',
 );
 
 export const homeContainerClasses = classNames(
   styles.homeContainer,
   'container',
-  'col-12',
   'd-flex',
+  'col-12',
 );
 
 export const iAmClasses = classNames(
   styles.iAm,
-  'my-3',
+  'my-lg-3',
+  'py-lg-3',
 );
 
 export const imgContainerClasses = classNames(
   styles.imgContainer,
-  'container',
+  'align-items-lg-center',
+  'mt-5',
+  'mt-lg-0',
   'd-flex',
+  'col-lg-3',
   justifyCenter,
 );
 
 export const imgProfileClasses = classNames(
   styles.imgProfile,
-  'img-thumbnail',
-  'col',
-  'col-4',
   'shadow-lg',
 );
 
@@ -58,17 +60,12 @@ export const myNameClasses = classNames(
   styles.myName,
   'display-3',
   'text-uppercase',
-  'my-3',
-);
-
-export const professionClasses = classNames(
-  styles.typedText,
-  'my-2',
+  'my-lg-3',
+  'py-lg-3',
 );
 
 export const socialNetWorkClasses = classNames(
   styles.socialNetWork,
-  'mx-3',
 );
 
 export const socialNetWorksContainerClasses = classNames(
@@ -77,21 +74,32 @@ export const socialNetWorksContainerClasses = classNames(
   'flex-row',
   'text-center',
   justifyCenter,
-  'mt-3',
+  'my-lg-3',
+  'py-lg-3',
 );
 
 export const textContainerClasses = classNames(
   styles.textContainer,
   'col-12',
+  'col-lg-9',
   'd-flex',
   flexColum,
   alignItemsCenter,
+  'justify-content-lg-start',
+);
+
+export const typedTextClasses = classNames(
+  styles.typedText,
+  'my-lg-3',
+  'py-lg-3',
 );
 
 export const textImageContainerClasses = classNames(
   styles.textImageContainer,
-  'my-5',
   'container',
+  'col-12',
   'd-flex',
+  'flex-lg-row',
   flexColum,
+  'justify-content-start',
 );

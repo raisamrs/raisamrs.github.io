@@ -80,3 +80,7 @@ export const techAndLogoContainerClasses = classNames(
 export const titleContainerClasses = classNames(
   styles.titleContainer,
 );
+
+export const iconsGitHubAnDeployClasses = classNames(
+  styles.iconsGitHubAnDeploy,
+);

@@ -15,7 +15,7 @@ import {
   projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
   btnGitHubClasses, btnDeployClasses, projectTitleCardContainerClasses,
   projectTitleImgContainerClasses, btnsContainerClasses, iconsClasses,
-  projectTechClasses, techAndLogoContainerClasses,
+  projectTechClasses, techAndLogoContainerClasses, iconsGitHubAnDeployClasses,
 } from './classesNamesProjects';
 import {
   titleBgClasses, titleFgClasses, titleContainerClasses,
@@ -82,7 +82,11 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img src={ gitHubIcon } alt="ícone do gitHub" />
+                      <img
+                        className={ iconsGitHubAnDeployClasses }
+                        src={ gitHubIcon }
+                        alt="ícone do gitHub"
+                      />
                       Repositório GitHub
                     </a>
                     <a
@@ -91,7 +95,11 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img src={ siteIcon } alt="ícone de site" />
+                      <img
+                        className={ iconsGitHubAnDeployClasses }
+                        src={ siteIcon }
+                        alt="ícone de site"
+                      />
                       Visitar aplicação
                     </a>
                   </div>
