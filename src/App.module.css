@@ -1,6 +1,6 @@
 /* src/App.css */
 html, body {
-	background-color: white;
+	background-color: var(--purple);
 	font-family: 'Roboto', sans-serif;
 	height: 100%;
 	margin: 0;
@@ -14,6 +14,7 @@ html, body {
 
 :root {
   --purple: #6c4e75;
+	--purple-2: #946ba1;
   --pink: #ff25af;
 	--light-grey-1: #dee2e69d;
   --light-grey-2: #b7babd;
@@ -22,6 +23,8 @@ html, body {
 	--light-violet: #CF9FFF;
 	--light-violet-hover: #a870e0;
 	--pale-violet: #CCCCFF;
+	--white-2: #e3e2e2;
+
 }
 
 .mainContainer {
@@ -98,7 +101,7 @@ html, body {
   font-weight: 900;
   position: relative;
   text-align: center;
-  -webkit-text-stroke: 1px var(--light-grey);
+  -webkit-text-stroke: 1px var(--purple-2);
 }
 
 .titleContainer {
@@ -107,7 +110,7 @@ html, body {
 }
 
 .titleFg {
-  color: var(--purple);
+  color: #e3e2e2;
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
   left: 50%;
