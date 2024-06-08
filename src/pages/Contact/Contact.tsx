@@ -137,7 +137,7 @@ function Contact() {
               </button>
             </div>
           </div>
-          <input type="hidden" name="redirectTo" value="http://localhost:5173/sent-message" />
+          <input type="hidden" name="redirectTo" value="https://raisamrs.github.io/sent-message" />
         </form>
       </div>
     </div>
