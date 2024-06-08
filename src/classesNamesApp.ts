@@ -32,6 +32,7 @@ export const titleContainerClasses = classNames(
   'd-flex',
   'align-items-center',
   'justify-content-center',
+  'my-4',
 );
 
 export const titleBgClasses = classNames(

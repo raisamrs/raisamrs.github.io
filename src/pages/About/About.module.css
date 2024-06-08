@@ -1,66 +1,75 @@
 :root {
-  --purple: rgb(108, 78, 117);
-  --pink: rgb(255, 37, 175);
-  --light-grey: rgb(222, 226, 230);
-}
-
-h3 {
-text-align: center;
-margin-top: 1.5vh;
-margin-bottom: 3vh;
-}
-
-img {
-  height: 20vw;
-  width: 20vw;
-}
-
-p {
-  color: var(--purple);
+  --grey: #808080;
+  --light-grey: #dee2e6;
+  --light-grey-1: #dee2e69d;
+  --light-grey-2: #b7babd;
+  --light-violet: #CF9FFF;
+  --light-violet-hover: #a870e0;
+  --lime-green: #b3f12c;
+  --pale-violet: #CCCCFF;
+  --pink: #ff25af;
+  --pink-2: #1c0313;
+  --purple: #6c4e75;
+  --purple-2: #946ba1;
+  --white-2: #e3e2e2;
 }
 
 .aboutMeContainer {
+  /* border: 1px solid limegreen; */
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
+
 .imgContainer {
-  width: 20vw;
-  height: 20vw;
+  /* border: 1px solid salmon; */
+  width: auto;
+}
+
+.profilePicture {
+  border: 0.4rem solid var(--pale-violet);
+  width: 20vh;
+  height: 20vh;
 }
 
 .link {
-  color: var(--pink);
+  color: var(--light-violet);
 }
 
-.textGradient {
-  background: linear-gradient(90deg, var(--pink) 30%, var(--purple) 60%);
+.title {
+  /* border: 1px solid white; */
+  background: linear-gradient(90deg, var(--pale-violet) 30%, var(--white-2) 70%);
   background-clip: text;
   color: transparent;
+  font-size: 2rem;
   --webkit-background-clip: text;
   --webkit-text-fill-color: transparent;
+  width: auto;
 }
 
-.textImageContainer {
-  align-items: center;
-/*   border: 1px solid red; */
-  display: flex;
-  flex-direction: row;
-  max-height: 100vh;
-  margin: 0 3vw;
-  width: 70vw;
-}
+/* .textImageContainer {
+  border: 1px solid red;
+} */
 
-.textContainer {
-  font-size: 1.3rem;
-  margin-left: 2vw;
-  padding-left: 1vw; 
+.textContent {
+  /* border: 1px solid lightblue; */
+  color: var(--white-2);
+  font-size: 1rem;
   text-align: justify;
 }
 
-.titleContainer {
-  height: 9vw;
+.year {
+  color: var(--lime-green);
 }
 
-.year {
-  color: var(--pink);
+@media (min-width: 1200px) {
+
+  .textContent {
+    font-size: 1.3rem;
+  }
+
+  .profilePicture {
+    height: 20vw;
+    width: 20vw;
+  }
+  
 }

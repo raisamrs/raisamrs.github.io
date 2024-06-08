@@ -13,18 +13,18 @@ html, body {
 }
 
 :root {
-  --purple: #6c4e75;
-	--purple-2: #946ba1;
-  --pink: #ff25af;
-	--light-grey-1: #dee2e69d;
+  --grey: #808080;
+  --light-grey: #dee2e6;
+  --light-grey-1: #dee2e69d;
   --light-grey-2: #b7babd;
-	--grey: #808080;
-	--lime-green: #b3f12c;
-	--light-violet: #CF9FFF;
-	--light-violet-hover: #a870e0;
-	--pale-violet: #CCCCFF;
-	--white-2: #e3e2e2;
-
+  --light-violet: #CF9FFF;
+  --light-violet-hover: #a870e0;
+  --lime-green: #b3f12c;
+  --pale-violet: #CCCCFF;
+  --pink: #ff25af;
+  --purple: #6c4e75;
+  --purple-2: #946ba1;
+  --white-2: #e3e2e2;
 }
 
 .mainContainer {
@@ -105,6 +105,7 @@ html, body {
 }
 
 .titleContainer {
+	/* border: 1px solid black; */
   height: 13vh;
 	position: relative;
 }
@@ -172,4 +173,20 @@ html, body {
 	.roundedBorder:hover {
 		background-color: var(--light-grey-2);
 	}
+}
+
+@media (min-width: 992px) {
+
+	.titleBg {
+		font-size: 7rem;
+	}
+	
+	.titleContainer {
+		height: 12vh;
+	}
+	
+	.titleFg {
+		font-size: 3.5rem;
+	}
+
 }
