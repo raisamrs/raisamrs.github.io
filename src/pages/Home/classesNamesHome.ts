@@ -16,8 +16,11 @@ export const gitHubContainerClasses = classNames(
 export const helloWorldClasses = classNames(
   styles.helloWorld,
   'font-weight-normal',
+  'mt-3',
   'my-lg-3',
   'py-lg-3',
+  'my-xl-4',
+  'py-xl-4',
 );
 
 export const homeContainerClasses = classNames(
