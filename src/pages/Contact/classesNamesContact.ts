@@ -33,6 +33,10 @@ export const emailClasses = classNames(
   styles.input,
 );
 
+export const errorMesssageClasses = classNames(
+  styles.errorMessage,
+);
+
 export const subjectClasses = classNames(
   formRow,
   formControl,
@@ -43,6 +47,7 @@ export const messageClasses = classNames(
   formRow,
   formControl,
   styles.input,
+  'col-lg-6',
 );
 
 export const btnClasses = classNames(
@@ -51,9 +56,15 @@ export const btnClasses = classNames(
   'btn-success',
 );
 
+export const messageContainerClasses = classNames(
+  formRow,
+  'col-lg-6',
+);
+
 export const formGroupClasses = classNames(
   'form-group',
-  'col-6',
+  'col-12',
+  'col-lg-5',
   'my-3',
 );
 
