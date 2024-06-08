@@ -29,14 +29,14 @@ export const homeContainerClasses = classNames(
 
 export const iAmClasses = classNames(
   styles.iAm,
-  'my-lg-3',
-  'py-lg-3',
+  'my-3',
+  'py-3',
 );
 
 export const imgContainerClasses = classNames(
   styles.imgContainer,
   'align-items-lg-center',
-  'mt-5',
+  'mt-3',
   'mt-lg-0',
   'd-flex',
   'col-lg-3',
@@ -60,8 +60,8 @@ export const myNameClasses = classNames(
   styles.myName,
   'display-3',
   'text-uppercase',
-  'my-lg-3',
-  'py-lg-3',
+  'my-3',
+  'py-3',
 );
 
 export const socialNetWorkClasses = classNames(
@@ -74,8 +74,8 @@ export const socialNetWorksContainerClasses = classNames(
   'flex-row',
   'text-center',
   justifyCenter,
-  'my-lg-3',
-  'py-lg-3',
+  'my-3',
+  'py-3',
 );
 
 export const textContainerClasses = classNames(
@@ -90,8 +90,8 @@ export const textContainerClasses = classNames(
 
 export const typedTextClasses = classNames(
   styles.typedText,
-  'my-lg-3',
-  'py-lg-3',
+  'my-3',
+  'py-3',
 );
 
 export const textImageContainerClasses = classNames(
