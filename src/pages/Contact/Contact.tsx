@@ -1,13 +1,9 @@
 import { useForm } from '../../helpers/formHandlers';
 import {
-  titleBgClasses, titleFgClasses,
-  titleContainerClasses,
-} from '../../classesNamesApp';
-import {
   nameClasses, lastNameClasses, emailClasses, subjectClasses,
   messageClasses, btnClasses, containerFormClasses, formRowClasses, formGroupClasses,
-  formGroupCol12Classes,
-} from './classesNamesContact';
+  formGroupCol12Classes, titleBgClasses, titleFgClasses } from './classesNamesContact';
+import { titleContainerClasses } from '../../classesNamesApp';
 
 function Contact() {
   const {

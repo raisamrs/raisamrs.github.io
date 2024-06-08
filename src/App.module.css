@@ -13,18 +13,21 @@ html, body {
 }
 
 :root {
-  --grey: #808080;
-  --light-grey: #dee2e6;
-  --light-grey-1: #dee2e69d;
-  --light-grey-2: #b7babd;
-  --light-violet: #CF9FFF;
-  --light-violet-hover: #a870e0;
-  --lime-green: #b3f12c;
-  --pale-violet: #CCCCFF;
-  --pink: #ff25af;
-  --purple: #6c4e75;
-  --purple-2: #946ba1;
-  --white-2: #e3e2e2;
+	:root {
+		--dark-green: #193B13;
+		--grey: #808080;
+		--light-grey: #DEE2E6;
+		--light-grey-1: #DEE2E69D;
+		--light-grey-2: #B7BABD;
+		--light-violet: #CF9FFF;
+		--light-violet-hover: #A870E0;
+		--lime-green: #B3F12C;
+		--pale-violet: #CCCCFF;
+		--pink: #FF25AF;
+		--purple: #6C4E75;
+		--purple-2: #946BA1;
+		--white-2: #E3E2E2;
+	}
 }
 
 .mainContainer {
@@ -129,6 +132,13 @@ html, body {
 	font-size: 2rem;
 }
 
+.costumFontSizeBg {
+	font-size: 4.5rem;
+}
+.costumFontSizeFg {
+	font-size: 2.3rem;
+}
+
 @media (max-width: 768px) {
 
 	.closeButton {
@@ -187,7 +197,14 @@ html, body {
 		font-size: 7rem;
 	}
 
-	.defaultFontSizeFg{
-	font-size: 3rem;
+	.defaultFontSizeFg {
+		font-size: 3rem;
+	}
+
+	.costumFontSizeBg {
+		font-size: 6.5rem;
+	}
+	.costumFontSizeFg {
+		font-size: 3.5rem;
 	}
 }

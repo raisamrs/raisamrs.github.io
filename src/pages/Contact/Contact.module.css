@@ -1,10 +1,19 @@
 :root {
-  --purple: #6c4e75;
-  --pink: #ff25af;
-  --light-grey: #dee2e6;
-	--grey: #808080;
-	--lime-green:#b3f12c;
-  --dark-green: #193b13;
+  :root {
+    --dark-green: #193B13;
+    --grey: #808080;
+    --light-grey: #DEE2E6;
+    --light-grey-1: #DEE2E69D;
+    --light-grey-2: #B7BABD;
+    --light-violet: #CF9FFF;
+    --light-violet-hover: #A870E0;
+    --lime-green: #B3F12C;
+    --pale-violet: #CCCCFF;
+    --pink: #FF25AF;
+    --purple: #6C4E75;
+    --purple-2: #946BA1;
+    --white-2: #E3E2E2;
+  }
 }
 
 button {
@@ -15,4 +24,9 @@ label {
   color: var(--pale-violet);
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+.input:focus {
+  border-color: var(--white-2) !important;
+  box-shadow: 0 0 0 0.2rem var(--pink) !important; 
 }
