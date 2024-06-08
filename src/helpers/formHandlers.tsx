@@ -17,7 +17,7 @@ export function useForm() {
     const newName = event.target.value;
     setName(newName);
     if (!isNameValid(newName)) {
-      setNameError('Ops! Parece que você digitou o nome errado!');
+      setNameError('⚠️ Ops! Parece que você digitou o nome errado!');
     } else {
       setNameError('');
     }
@@ -27,7 +27,7 @@ export function useForm() {
     const newLastName = event.target.value;
     setLastName(newLastName);
     if (!isLastNameValid(newLastName)) {
-      setLastNameError('Ops! Parece que você digitou o sobrenome errado!');
+      setLastNameError('⚠️ Ops! Parece que você digitou o sobrenome errado!');
     } else {
       setLastNameError('');
     }
@@ -37,7 +37,7 @@ export function useForm() {
     const newEmail = event.target.value;
     setEmail(newEmail);
     if (!isEmailValid(newEmail)) {
-      setEmailError('Ops! E-mail inválido! :(');
+      setEmailError('⚠️ Ops! E-mail inválido! :(');
     } else {
       setEmailError('');
     }

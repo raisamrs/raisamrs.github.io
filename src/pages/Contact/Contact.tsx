@@ -2,7 +2,8 @@ import { useForm } from '../../helpers/formHandlers';
 import {
   nameClasses, lastNameClasses, emailClasses, subjectClasses,
   messageClasses, btnClasses, containerFormClasses, formRowClasses, formGroupClasses,
-  formGroupCol12Classes, titleBgClasses, titleFgClasses } from './classesNamesContact';
+  formGroupCol12Classes, titleBgClasses, titleFgClasses,
+  messageContainerClasses, errorMesssageClasses } from './classesNamesContact';
 import { titleContainerClasses } from '../../classesNamesApp';
 
 function Contact() {
@@ -54,6 +55,8 @@ function Contact() {
                 maxLength={ 60 }
               />
             </div>
+            {nameError
+            && <p className={ errorMesssageClasses }>{nameError}</p>}
           </div>
           <div className={ formRowClasses }>
             <div className={ formGroupClasses }>
@@ -72,9 +75,8 @@ function Contact() {
               />
             </div>
           </div>
-
-          {nameError && <p>{nameError}</p>}
-          {lastNameError && <p>{lastNameError}</p>}
+          {lastNameError
+          && <p className={ errorMesssageClasses }>{lastNameError}</p>}
 
           <div className={ formRowClasses }>
             <div className={ formGroupClasses }>
@@ -92,7 +94,8 @@ function Contact() {
               />
             </div>
           </div>
-          {emailError && <p>{emailError}</p>}
+          {emailError
+          && <p className={ errorMesssageClasses }>{emailError}</p>}
 
           <div className={ formRowClasses }>
             <div className={ formGroupClasses }>
@@ -110,12 +113,12 @@ function Contact() {
             </div>
           </div>
 
-          <div className={ formRowClasses }>
+          <div className={ messageContainerClasses }>
             <div className={ formGroupCol12Classes } />
             <textarea
               className={ messageClasses }
               name="$Mensagem"
-              cols={ 30 }
+              cols={ 10 }
               rows={ 10 }
               placeholder="Detalhe um pouco mais o que deseja :)"
               value={ message }
