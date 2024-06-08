@@ -2,6 +2,8 @@ import classNames from 'classnames';
 import styles from './SentMessage.module.css';
 
 export const sucessMsgClasses = classNames(
+  styles.h1,
+  styles.h2,
   'text-center',
 );
 

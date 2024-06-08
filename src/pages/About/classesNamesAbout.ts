@@ -1,17 +1,9 @@
 import classNames from 'classnames';
 import styles from './About.module.css';
+import stylesApp from '../../App.module.css';
 
 const justifyCenter = 'justify-content-center';
 const alignItemsCenter = 'align-items-center';
-export const aboutClasses = classNames(
-  styles.about,
-  'text-uppercase',
-);
-export const aboutMeClasses = classNames(
-  styles.aboutMe,
-  'position-absolute',
-  'text-uppercase',
-);
 
 export const aboutMeContainerClasses = classNames(
   styles.aboutMeContainer,
@@ -45,9 +37,8 @@ export const profilePictureClasses = classNames(
 );
 
 export const titleContainerClasses = classNames(
-  styles.titleContainer,
-  'position-relative',
-  'd-flex',
+  stylesApp.titleContainer,
+  'col-12',
   alignItemsCenter,
   justifyCenter,
 );
@@ -74,4 +65,19 @@ export const titleClasses = classNames(
   'text-center',
   'my-4',
   'mx-3',
+);
+
+export const titleBgClasses = classNames(
+  stylesApp.defaultFontSizeBg,
+  stylesApp.titleBgClasses,
+  stylesApp.titleBg,
+  'text-uppercase',
+);
+
+export const titleFgClasses = classNames(
+  stylesApp.defaultFontSizeFg,
+  stylesApp.titleFgClasses,
+  stylesApp.titleFg,
+  'text-uppercase',
+  'position-absolute',
 );
