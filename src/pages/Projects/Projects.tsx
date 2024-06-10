@@ -9,6 +9,7 @@ import cssIcon from '../../assets/css-icon.svg';
 import bootstrapIcon from '../../assets/bootstrap-icon.svg';
 import { renderDescription } from '../../helpers/renderDescription';
 import { ProjectImageType } from '../../types';
+import ScrollIndicator from '../../components/ScrollIndicator/ScrollIndicator';
 import {
   cardsContainerClasses, imgProjectClasses, projectContainerClasses,
   projectCardClasses, columnCardsClasses, cardBodyClasses, projectTechContainerClasses,
@@ -16,10 +17,9 @@ import {
   btnGitHubClasses, btnDeployClasses, projectTitleCardContainerClasses,
   projectTitleImgContainerClasses, btnsContainerClasses, iconsClasses,
   projectTechClasses, techAndLogoContainerClasses, iconsGitHubAnDeployClasses,
+  titleBgClasses, titleFgClasses,
 } from './classesNamesProjects';
-import {
-  titleBgClasses, titleFgClasses, titleContainerClasses,
-} from '../../classesNamesApp';
+import { titleContainerClasses } from '../../classesNamesApp';
 import styles from './Projects.module.css';
 
 const techLogos: { [key: string]: string } = {
@@ -55,55 +55,56 @@ function Projects() {
                 </div>
               </div>
               <div className={ styles.showAfter }>
-                <div className={ cardBodyClasses }>
-                  <div className={ projectTitleCardContainerClasses }>
-                    <h3 className={ projectTitleCardClasses }>{project.title}</h3>
-                  </div>
-                  <p className={ projectDescriptionClasses }>
-                    {renderDescription(project.description)}
-                  </p>
-                  <div className={ projectTechContainerClasses }>
-                    {project.technologies.map((tech, j) => (
-                      <div key={ j } className={ techAndLogoContainerClasses }>
+                <ScrollIndicator>
+                  <div className={ cardBodyClasses }>
+                    <div className={ projectTitleCardContainerClasses }>
+                      <h3 className={ projectTitleCardClasses }>{project.title}</h3>
+                    </div>
+                    <p className={ projectDescriptionClasses }>
+                      {renderDescription(project.description)}
+                    </p>
+                    <div className={ projectTechContainerClasses }>
+                      {project.technologies.map((tech, j) => (
+                        <div key={ j } className={ techAndLogoContainerClasses }>
+                          <img
+                            src={ techLogos[tech.logo] }
+                            alt={ `${tech.name} logo` }
+                            className={ iconsClasses }
+                          />
+                          <span className={ projectTechClasses }>{tech.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className={ btnsContainerClasses }>
+                      <a
+                        href={ project.github }
+                        className={ btnGitHubClasses }
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <img
-                          src={ techLogos[tech.logo] }
-                          alt={ `${tech.name} logo` }
-                          className={ iconsClasses }
+                          className={ iconsGitHubAnDeployClasses }
+                          src={ gitHubIcon }
+                          alt="ícone do gitHub"
                         />
-                        <span className={ projectTechClasses }>{tech.name}</span>
-                      </div>
-                    ))}
+                        Repositório GitHub
+                      </a>
+                      <a
+                        href={ project.deploy }
+                        className={ btnDeployClasses }
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          className={ iconsGitHubAnDeployClasses }
+                          src={ siteIcon }
+                          alt="ícone de site"
+                        />
+                        Visitar aplicação
+                      </a>
+                    </div>
                   </div>
-                  <div className={ btnsContainerClasses }>
-
-                    <a
-                      href={ project.github }
-                      className={ btnGitHubClasses }
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        className={ iconsGitHubAnDeployClasses }
-                        src={ gitHubIcon }
-                        alt="ícone do gitHub"
-                      />
-                      Repositório GitHub
-                    </a>
-                    <a
-                      href={ project.deploy }
-                      className={ btnDeployClasses }
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        className={ iconsGitHubAnDeployClasses }
-                        src={ siteIcon }
-                        alt="ícone de site"
-                      />
-                      Visitar aplicação
-                    </a>
-                  </div>
-                </div>
+                </ScrollIndicator>
               </div>
             </div>
           ))}

@@ -15,19 +15,24 @@ html, body {
 :root {
 	:root {
 		--dark-green: #193B13;
+		--dark-grey: #1d1d1d;
+		--dark-purple: #5f3165;
 		--grey: #808080;
 		--light-grey: #DEE2E6;
 		--light-grey-1: #DEE2E69D;
 		--light-grey-2: #B7BABD;
+		--light-grey-3: #D3D3D3;
+		--light-pink:#dd50a9e2;
 		--light-violet: #CF9FFF;
 		--light-violet-hover: #A870E0;
 		--lime-green: #B3F12C;
 		--pale-violet: #CCCCFF;
 		--pink: #FF25AF;
+		--pink-2: #c02386;
 		--purple: #6C4E75;
 		--purple-2: #946BA1;
 		--white-2: #E3E2E2;
-    --yellow: :#ffe100d7;
+    --yellow: #ffe100d7;
 	}
 }
 
@@ -130,14 +135,14 @@ html, body {
 	font-size: 5rem;
 }
 .defaultFontSizeFg {
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 .costumFontSizeBg {
-	font-size: 4.5rem;
+	font-size: 4.2rem;
 }
 .costumFontSizeFg {
-	font-size: 2.3rem;
+	font-size: 2rem;
 }
 
 @media (max-width: 768px) {
