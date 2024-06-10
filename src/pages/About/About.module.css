@@ -1,18 +1,26 @@
 :root {
-  --grey: #808080;
-  --light-grey: #dee2e6;
-  --light-grey-1: #dee2e69d;
-  --light-grey-2: #b7babd;
-  --light-violet: #CF9FFF;
-  --light-violet-hover: #a870e0;
-  --lime-green: #b3f12c;
-  --pale-violet: #CCCCFF;
-  --pink: #ff25af;
-  --pink-2: #1c0313;
-  --purple: #6c4e75;
-  --purple-2: #946ba1;
-  --white-2: #e3e2e2;
+  --green-1: #B3F12C;
+  --green-2: #193B13;
+  --grey-1: #DEE2E6;
+  --grey-2: #DEE2E69D;
+  --grey-3: #B7BABD;
+  --grey-4: #D3D3D3;
+  --grey-5: #1D1D1D;
+  --grey-6: #808080;
+  --grey-7: #ffffff80;
+  --pink-1: #FF25AF;
+  --pink-2: #C02386;
+  --pink-3: #DD50A9E2;
+  --purple-1: #5F3165;
+  --purple-2: #946BA1;
+  --purple-3: #6C4E75;
+  --violet-1: #CCCCFF;
+  --violet-2: #CF9FFF;
+  --violet-3: #A870E0;
+  --white-2: #E3E2E2;
+  --yellow: #FFE100D7;
 }
+
 
 .aboutMeContainer {
   /* border: 1px solid limegreen; */
@@ -26,18 +34,18 @@
 }
 
 .profilePicture {
-  border: 0.4rem solid var(--pale-violet);
+  border: 0.4rem solid var(--violet-2);
   width: 20vh;
   height: 20vh;
 }
 
 .link {
-  color: var(--light-violet);
+  color: var(--violet-1);
 }
 
 .title {
   /* border: 1px solid white; */
-  background: linear-gradient(90deg, var(--pale-violet) 30%, var(--white-2) 70%);
+  background: linear-gradient(90deg, var(--violet-2) 30%, var(--white-2) 70%);
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -58,7 +66,7 @@
 }
 
 .year {
-  color: var(--lime-green);
+  color: var(--green-1);
 }
 
 @media (min-width: 1200px) {

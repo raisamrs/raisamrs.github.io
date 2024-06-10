@@ -1,37 +1,42 @@
 :root {
-  :root {
-    --dark-green: #193B13;
-    --grey: #808080;
-    --light-grey: #DEE2E6;
-    --light-grey-1: #DEE2E69D;
-    --light-grey-2: #B7BABD;
-    --light-violet: #CF9FFF;
-    --light-violet-hover: #A870E0;
-    --lime-green: #B3F12C;
-    --pale-violet: #CCCCFF;
-    --pink: #FF25AF;
-    --purple: #6C4E75;
-    --purple-2: #946BA1;
-    --white-2: #E3E2E2;
-    --yellow: :#ffe100d7;
-  }
+  --green-1: #B3F12C;
+  --green-2: #193B13;
+  --grey-1: #DEE2E6;
+  --grey-2: #DEE2E69D;
+  --grey-3: #B7BABD;
+  --grey-4: #D3D3D3;
+  --grey-5: #1D1D1D;
+  --grey-6: #808080;
+  --grey-7: #ffffff80;
+  --pink-1: #FF25AF;
+  --pink-2: #C02386;
+  --pink-3: #DD50A9E2;
+  --purple-1: #5F3165;
+  --purple-2: #946BA1;
+  --purple-3: #6C4E75;
+  --violet-1: #CCCCFF;
+  --violet-2: #CF9FFF;
+  --violet-3: #A870E0;
+  --white-2: #E3E2E2;
+  --yellow: #FFE100D7;
 }
+
 
 button {
   cursor: not-allowed;
 }
 
 label {
-  color: var(--pale-violet);
+  color: var(--violet-2);
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .errorMessage {
-  color:#ffe100d7;
+  color:var(--yellow);
 }
 
 .input:focus {
   border-color: var(--white-2) !important;
-  box-shadow: 0 0 0 0.2rem var(--pink) !important; 
+  box-shadow: 0 0 0 0.2rem var(--pink-1) !important; 
 }

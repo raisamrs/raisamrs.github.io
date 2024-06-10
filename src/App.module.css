@@ -1,6 +1,29 @@
 /* src/App.css */
+	:root {
+		--green-1: #B3F12C;
+		--green-2: #193B13;
+		--grey-1: #DEE2E6;
+		--grey-2: #DEE2E69D;
+		--grey-3: #B7BABD;
+		--grey-4: #D3D3D3;
+		--grey-5: #1D1D1D;
+		--grey-6: #808080;
+		--grey-7: #ffffff80;
+		--pink-1: #FF25AF;
+		--pink-2: #C02386;
+		--pink-3: #DD50A9E2;
+		--purple-1: #5F3165;
+		--purple-2: #946BA1;
+		--purple-3: #6C4E75;
+		--violet-1: #CCCCFF;
+		--violet-2: #CF9FFF;
+		--violet-3: #A870E0;
+		--white-2: #E3E2E2;
+		--yellow: #FFE100D7;
+	}
+
 html, body {
-	background-color: var(--purple);
+	background-color: #5f3165;
 	font-family: 'Roboto', sans-serif;
 	height: 100%;
 	margin: 0;
@@ -12,29 +35,6 @@ html, body {
 	height: 100%;
 }
 
-:root {
-	:root {
-		--dark-green: #193B13;
-		--dark-grey: #1d1d1d;
-		--dark-purple: #5f3165;
-		--grey: #808080;
-		--light-grey: #DEE2E6;
-		--light-grey-1: #DEE2E69D;
-		--light-grey-2: #B7BABD;
-		--light-grey-3: #D3D3D3;
-		--light-pink:#dd50a9e2;
-		--light-violet: #CF9FFF;
-		--light-violet-hover: #A870E0;
-		--lime-green: #B3F12C;
-		--pale-violet: #CCCCFF;
-		--pink: #FF25AF;
-		--pink-2: #c02386;
-		--purple: #6C4E75;
-		--purple-2: #946BA1;
-		--white-2: #E3E2E2;
-    --yellow: #ffe100d7;
-	}
-}
 
 .mainContainer {
 	display: flex;
@@ -47,7 +47,7 @@ html, body {
 .menuButton {
   background: none;
   border: none;
-  color: var(--purple);
+  color: var(--purple-1);
   cursor: pointer;
   display: none; 
   font-size: 2rem;
@@ -55,7 +55,7 @@ html, body {
 }
 
 .menuButton:hover {
-	color: var(--pink);
+	color: var(--pink-1);
 }
 
 .menuClosed {
@@ -69,9 +69,9 @@ html, body {
 
 .navbar {
   align-items: center;
-	background-color: var(--purple);
-	box-shadow: 0 4px 2px -2px var(--grey); 
-	color: var(--purple);
+	background-color: var(--purple-1);
+	box-shadow: 0 4px 2px -2px var(--grey-6); 
+	color: var(--purple-1);
 	display: flex;
 	gap: 3%;
 	height: 5rem;
@@ -87,7 +87,7 @@ html, body {
 }
 
 .navLink {
-	color: var(--purple);
+	color: var(--purple-1);
 	display: flex;
 	font-size: 1.3vw;
 	justify-content: space-evenly;
@@ -98,7 +98,7 @@ html, body {
 
 .navLinkHover {
 	&:hover {
-		color: var(--pink);
+		color: var(--pink-1);
 		font-weight: 700;
 	}
 } 
@@ -122,7 +122,7 @@ html, body {
 
 .titleFg {
 	/* border: 1px solid red; */
-  color: #e3e2e2;
+  color: var(--white-2);
   font-family: 'Roboto', sans-serif;
   left: 50%;
   position: absolute;
@@ -149,7 +149,7 @@ html, body {
 
 	.closeButton {
 		border-radius: 1rem;
-		color: var(--purple);
+		color: var(--purple-1);
 		cursor: pointer;
 		font-size: 2rem;
 		position: absolute;
@@ -164,7 +164,7 @@ html, body {
   }
   
   .menuOpen {
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: var(--grey-7);
 		backdrop-filter: blur(10px);
     display: flex ! important; 
 		flex-direction: column !important;
@@ -187,14 +187,14 @@ html, body {
 	}
 
 	.roundedBorder {
-    background-color: var(--light-grey-1);
+    background-color: var(--grey-1);
 		clip-path: circle(40%);
     height: 4rem;
 		width: 4rem;
 	}
 
 	.roundedBorder:hover {
-		background-color: var(--light-grey-2);
+		background-color: var(--grey-2);
 	}
 }
 

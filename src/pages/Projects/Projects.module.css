@@ -1,28 +1,29 @@
 :root {
-  --dark-green: #193B13;
-  --dark-grey: #1d1d1d;
-  --dark-purple: #5f3165;
-  --grey: #808080;
-  --light-grey: #DEE2E6;
-  --light-grey-1: #DEE2E69D;
-  --light-grey-2: #B7BABD;
-  --light-grey-3: #D3D3D3;
-  --light-pink:#dd50a9e2;
-  --light-violet: #CF9FFF;
-  --light-violet-hover: #A870E0;
-  --lime-green: #B3F12C;
-  --pale-violet: #CCCCFF;
-  --pink: #FF25AF;
-  --pink-2: #c02386;
-  --purple: #6C4E75;
+  --green-1: #B3F12C;
+  --green-2: #193B13;
+  --grey-1: #DEE2E6;
+  --grey-2: #DEE2E69D;
+  --grey-3: #B7BABD;
+  --grey-4: #D3D3D3;
+  --grey-5: #1D1D1D;
+  --grey-6: #808080;
+  --grey-7: #ffffff80;
+  --pink-1: #FF25AF;
+  --pink-2: #C02386;
+  --pink-3: #DD50A9E2;
+  --purple-1: #5F3165;
   --purple-2: #946BA1;
+  --purple-3: #6C4E75;
+  --violet-1: #CCCCFF;
+  --violet-2: #CF9FFF;
+  --violet-3: #A870E0;
   --white-2: #E3E2E2;
-  --yellow: #ffe100d7;
+  --yellow: #FFE100D7;
 }
 
 .iconsGitHubAnDeploy {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 4vw;
+  height: 4vw;
 }
 
 h3 {
@@ -30,32 +31,37 @@ h3 {
 }
 
 .badge-info {
-  background-color: var(--light-blue);
-  color: var(--white);
+  background-color: lightsalmon;
+  color: var(--white-2);
 }
 
 .btn {
-  background-color: var(--light-violet);
-  color: var(--dark-purple);
-  font-size: 0.8rem;
-  width: auto;
+  background-color: var(--violet-2);
+  color: var(--purple-3);
+  font-size: 3vw;
+  height: auto;
+  width: 38vw;
 }
 
 .btn:hover {
-  background-color: var(--light-violet-hover);
-  color: var(--dark-purple);
+  background-color: var(--violet-3);
+  color: var(--purple-3);
 }
 
 .btnsContainer {
-  border: 1px solid var(--light-grey);
+  /* border: 1px solid var(--grey-1); */
+  gap: 1rem;
 }
 
 .cardBody {
-  border: 1px solid var(--lime-green)
+  /* border: 1px solid var(--green-1); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cardsContainer {
-  border: 1px solid var(--light-grey-3);
+  border: 1px solid var(--grey-4);
 
 }
 
@@ -65,64 +71,71 @@ border: 1px solid var(--yellow)
 
 .highlight {
   font-style: italic;
-  color: var(--pink);
+  color: var(--pink-1);
 }
 
 .icons {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 4vw;
+  height: 4vw;
 }
 
 .projectCard {
-  border: 0.2rem solid var(--light-violet);
+  border: 0.2rem solid var(--violet-2);
   border-radius: 0.5rem;
   border-top-right-radius: 25px;
   overflow: hidden;
-  padding-bottom: 2rem;
   position: relative;
 }
 
 .projectCard:hover .showAfter {
-  opacity: 1; /* Torna visível ao passar o mouse */
+  opacity: 1;
 }
 
-.projectContainer {
-  border: 1px solid var(--pale-violet)
-}
+/* .projectContainer {
+  border: 1px solid var(--violet-1)
+} */
 
 .projectDescription {
-  border: 1px solid orange;
-  color: var(--dark-purple);
+  /* border: 1px solid orange; */
+  color: var(--purple-3);
   font-size: 0.8rem;
+  text-align: justify;
+  direction: ltr;
+  width: 85vw;
 }
 
 .projectTech {
   border-radius: 0.4rem;
-  font-size: 0.7rem;
+  font-size: 3vw;
 }
 
 .projectTechContainer {
-  border: 1px solid var(--lime-green);
+  /* border: 1px solid var(--green-1); */
+  width: 55vw;
 }
 
 .projectTitleCard {
-  border: 1px solid var(--white-2);
-  color: var(--light-violet);
+  /* border: 1px solid var(--white-2); */
+  color: var(--violet-2);
   font-size: 1.25rem;
   font-weight: bold;
-  height: 3rem;
+}
+
+.projectTitleCardContainer {
+  /* border: 1px solid red; */
+  direction: ltr;
 }
 
 .projectTitleImg {
-  border: 1px solid yellow;
-  color: var(--pale-violet);
+  /* border: 1px solid yellow; */
+  color: var(--violet-1);
   font-size: 1.25rem;
   font-weight: bold;
 }
 
 .projectTitleImgContainer {
-  border: 1px solid var(--light-violet);
-  background-color: var(--purple);
+  border: 1px solid var(--violet-2);
+  background-color: var(--purple-1);
   border-top-right-radius: 4rem;
   height: 3rem;
   width: 100%;
@@ -135,10 +148,14 @@ border: 1px solid var(--yellow)
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: var(--lime-green);
+  background-color: var(--grey-5);
   border-top-right-radius: 4rem;
-  transition: opacity 0.3s ease-in-out; /* Transição suave */
+  transition: opacity 0.3s ease-in-out;
+  overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-color: var(--white-2) var(--pink-3);
+  scrollbar-width: thin;
+  direction: rtl;
 }
 
 .showAfter::-webkit-scrollbar {
@@ -146,7 +163,7 @@ border: 1px solid var(--yellow)
 }
 
 .showAfter::-webkit-scrollbar-thumb {
-  background-color: var(--light-grey-2);
+  background-color: var(--grey-3);
   border-radius: 4px;
 }
 
@@ -161,10 +178,11 @@ border: 1px solid var(--yellow)
 
 .techAndLogoContainer {
   background: white;
-  border: 1px solid var(--light-pink);
+  border: 1px solid var(--pink-3);
   border-radius: 0.5rem;
-  color: var(--light-pink);
-  width: auto;
+  color: var(--pink-3);
+  font-size: 0.7rem;
+  width: 25vw;
 }
 
 .titleContainer {

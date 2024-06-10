@@ -5,6 +5,7 @@ import stylesApp from '../../App.module.css';
 const dFlex = 'd-flex';
 const column = 'flex-column';
 const row = 'flex-row';
+const rowReverse = 'flex-row-reverse';
 const justifyCenter = 'justify-content-center';
 const alignItemsCenter = 'align-items-center';
 const justifyAround = 'justify-content-around';
@@ -14,23 +15,29 @@ export const btnsContainerClasses = classNames(
   dFlex,
   row,
   justifyAround,
-  'col-10',
+  'mb-2',
 );
 
 export const btnGitHubClasses = classNames(
   styles.btn,
+  dFlex,
   'btn',
-  'col-4',
+  rowReverse,
 );
 
 export const btnDeployClasses = classNames(
   styles.btn,
+  dFlex,
   'btn',
-  'col-4',
+  rowReverse,
 );
 
 export const cardBodyClasses = classNames(
   styles.cardBody,
+  styles.scrollBar,
+  dFlex,
+  column,
+  alignItemsCenter,
 );
 
 export const cardsContainerClasses = classNames(
@@ -42,6 +49,7 @@ export const cardsContainerClasses = classNames(
 
 export const iconsClasses = classNames(
   styles.icons,
+  'me-1',
 );
 
 export const imgProjectClasses = classNames(
@@ -60,7 +68,7 @@ export const projectContainerClasses = classNames(
 
 export const projectDescriptionClasses = classNames(
   styles.projectDescription,
-  'mx-2',
+  'mx-3',
 );
 
 export const projectTechClasses = classNames(
@@ -71,10 +79,10 @@ export const projectTechContainerClasses = classNames(
   styles.projectTechContainer,
   dFlex,
   row,
+  alignItemsCenter,
+  'justify-content-end',
   'flex-wrap',
-  'my-2',
-  'mx-2',
-  'col-12',
+  'mb-3',
 );
 
 export const projectTitleCardClasses = classNames(
@@ -83,6 +91,10 @@ export const projectTitleCardClasses = classNames(
 
 export const projectTitleCardContainerClasses = classNames(
   styles.projectTitleCardContainer,
+  dFlex,
+  row,
+  'justify-content-start',
+  'ms-3',
 );
 
 export const projectTitleImgClasses = classNames(
@@ -102,9 +114,12 @@ export const columnCardsClasses = classNames(
 
 export const techAndLogoContainerClasses = classNames(
   styles.techAndLogoContainer,
-  'col-3',
-  'mx-2',
-  'px-2',
+  dFlex,
+  rowReverse,
+  alignItemsCenter,
+  justifyCenter,
+  'flex-wrap',
+  'mx-1',
   'my-2',
 );
 
