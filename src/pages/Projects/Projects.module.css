@@ -22,28 +22,17 @@
   --yellow: #FFE100D7;
 }
 
-.iconsGitHubAnDeploy {
-  width: 4vw;
-  height: 4vw;
-}
-
 h3 {
   text-align: left;
-}
-
-.badge-info {
-  background-color: lightsalmon;
-  color: var(--white-2);
 }
 
 .btn {
   background-color: var(--pink-3);
   border: 1px dashed var(--purple-1);
-  color: var(--white-2);
+  color: white;
   font-size: 3vw;
   gap: 2%;
   height: auto;
-  width: 20vw;
 }
 
 .btn:hover {
@@ -52,32 +41,33 @@ h3 {
 }
 
 .btnsContainer {
-  /* border: 1px solid var(--grey-1); */
   gap: 1rem;
 }
 
 .cardBody {
-  /* border: 1px solid var(--green-1); */
+  /* border: 1px solid var(--green-2); */
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.cardsContainer {
+/* .cardsContainer {
   border: 1px solid var(--grey-4);
+} */
 
-}
+/* .columnCards {
+  border: 1px solid var(--yellow)
+  } */
 
-.columnCards {
-border: 1px solid var(--yellow)
-}
-
-.highlight {
+  .highlight {
   font-style: italic;
   color: var(--pink-1);
 }
 
 .icons {
+  width: 1.2rem;
+}
+
+.iconsGitHubAnDeploy {
   width: 4vw;
   height: 4vw;
 }
@@ -89,17 +79,15 @@ border: 1px solid var(--yellow)
   border-top-right-radius: 25px;
   overflow: hidden;
   position: relative;
-  width: 92vw;
-  height: 61vw;
 }
 
 .projectCard:hover .showAfter {
-  opacity: 1;
+  opacity: 1; /* Torna visível ao passar o mouse */
 }
 
-/* .projectContainer {
+.projectContainer {
   border: 1px solid var(--violet-1)
-} */
+} 
 
 .projectDescription {
   /* border: 1px solid black; */
@@ -112,16 +100,15 @@ border: 1px solid var(--yellow)
 
 .projectTech {
   border-radius: 0.4rem;
-  font-size: 3vw;
+  font-size: 1rem;
 }
 
 .projectTechContainer {
-  /* border: 1px solid var(--green-1); */
-  width: 55vw;
+  border: 1px solid var(--green-1);
 }
 
 .projectTitleCard {
-  border: 1px solid var(--pink-2);
+  /* border: 1px solid var(--pink-2); */
   color: var(--pink-4);
   font-size: 1.2rem;
   font-weight: bold;
@@ -133,7 +120,7 @@ border: 1px solid var(--yellow)
 }
 
 .projectTitleImg {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   color: var(--pink-2);
   font-size: 1.2rem;
   font-weight: bold;
@@ -144,7 +131,7 @@ border: 1px solid var(--yellow)
   background-color: var(--violet-1);
   border-top-right-radius: 4rem;
   width: 100%;
-  height: 3vh;
+  height: 3rem;
 }
 
 .showAfter {
@@ -179,17 +166,21 @@ border: 1px solid var(--yellow)
   border-radius: 0.5rem;
   color: var(--pink-3);
   font-size: 0.7rem;
-  width: 25vw;
 }
 
 .titleContainer {
-  border: 1px solid salmon;
+/*   border: 1px solid salmon; */
   position: relative;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+
+  .projectTitleCard , .projectTitleImg {
+    font-size: 1.5rem;
+  }
+
   .projectDescription {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }

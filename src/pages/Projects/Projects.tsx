@@ -13,10 +13,10 @@ import {
   cardsContainerClasses, imgProjectClasses, projectContainerClasses,
   projectCardClasses, columnCardsClasses, cardBodyClasses, projectTechContainerClasses,
   projectTitleCardClasses, projectTitleImgClasses, projectDescriptionClasses,
-  btnGitHubClasses, btnDeployClasses, projectTitleCardContainerClasses,
+  btnGitAndDeployClasses, projectTitleCardContainerClasses,
   projectTitleImgContainerClasses, btnsContainerClasses, iconsClasses,
   projectTechClasses, techAndLogoContainerClasses, iconsGitHubAnDeployClasses,
-  titleBgClasses, titleFgClasses,
+  titleBgClasses, titleFgClasses, alignItemsBodyCardClasses,
 } from './classesNamesProjects';
 import { titleContainerClasses } from '../../classesNamesApp';
 import styles from './Projects.module.css';
@@ -54,52 +54,54 @@ function Projects() {
                 </div>
               </div>
               <div className={ styles.showAfter }>
-                <div className={ projectTitleCardContainerClasses }>
-                  <h3 className={ projectTitleCardClasses }>{project.title}</h3>
-                </div>
                 <div className={ cardBodyClasses }>
-                  <p className={ projectDescriptionClasses }>
-                    {renderDescription(project.description)}
-                  </p>
-                  <div className={ projectTechContainerClasses }>
-                    {project.technologies.map((tech, j) => (
-                      <div key={ j } className={ techAndLogoContainerClasses }>
-                        <img
-                          src={ techLogos[tech.logo] }
-                          alt={ `${tech.name} logo` }
-                          className={ iconsClasses }
-                        />
-                        <span className={ projectTechClasses }>{tech.name}</span>
-                      </div>
-                    ))}
+                  <div className={ projectTitleCardContainerClasses }>
+                    <h3 className={ projectTitleCardClasses }>{project.title}</h3>
                   </div>
-                  <div className={ btnsContainerClasses }>
-                    <a
-                      href={ project.github }
-                      className={ btnGitHubClasses }
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        className={ iconsGitHubAnDeployClasses }
-                        src={ gitHubIcon }
-                        alt="ícone do gitHub"
-                      />
-                      Código
-                    </a>
-                    <a
-                      href={ project.deploy }
-                      className={ btnDeployClasses }
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <img
-                        className={ iconsGitHubAnDeployClasses }
-                        src={ siteIcon }
-                        alt="ícone de site"
-                      />
-                      Visitar
-                    </a>
+                  <div className={ alignItemsBodyCardClasses }>
+                    <p className={ projectDescriptionClasses }>
+                      {renderDescription(project.description)}
+                    </p>
+                    <div className={ projectTechContainerClasses }>
+                      {project.technologies.map((tech, j) => (
+                        <div key={ j } className={ techAndLogoContainerClasses }>
+                          <img
+                            src={ techLogos[tech.logo] }
+                            alt={ `${tech.name} logo` }
+                            className={ iconsClasses }
+                          />
+                          <span className={ projectTechClasses }>{tech.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className={ btnsContainerClasses }>
+                      <a
+                        href={ project.github }
+                        className={ btnGitAndDeployClasses }
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          className={ iconsGitHubAnDeployClasses }
+                          src={ gitHubIcon }
+                          alt="ícone do gitHub"
+                        />
+                        Código
+                      </a>
+                      <a
+                        href={ project.deploy }
+                        className={ btnGitAndDeployClasses }
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          className={ iconsGitHubAnDeployClasses }
+                          src={ siteIcon }
+                          alt="ícone de site"
+                        />
+                        Visitar
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

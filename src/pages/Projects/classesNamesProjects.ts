@@ -8,36 +8,32 @@ const row = 'flex-row';
 const rowReverse = 'flex-row-reverse';
 const justifyCenter = 'justify-content-center';
 const alignItemsCenter = 'align-items-center';
-const justifyAround = 'justify-content-around';
+
+export const alignItemsBodyCardClasses = classNames(
+  dFlex,
+  column,
+  alignItemsCenter,
+);
 
 export const btnsContainerClasses = classNames(
   styles.btnsContainer,
   dFlex,
   row,
-  justifyAround,
+  justifyCenter,
+  alignItemsCenter,
   'mb-2',
 );
 
-export const btnGitHubClasses = classNames(
+export const btnGitAndDeployClasses = classNames(
   styles.btn,
   dFlex,
-  'btn',
   rowReverse,
-);
-
-export const btnDeployClasses = classNames(
-  styles.btn,
-  dFlex,
   'btn',
-  rowReverse,
 );
 
 export const cardBodyClasses = classNames(
-  styles.cardBody,
-  styles.scrollBar,
   dFlex,
   column,
-  alignItemsCenter,
 );
 
 export const cardsContainerClasses = classNames(
@@ -80,7 +76,8 @@ export const projectTechContainerClasses = classNames(
   dFlex,
   row,
   alignItemsCenter,
-  'justify-content-end',
+  'col-12',
+  justifyCenter,
   'flex-wrap',
   'mb-3',
 );
@@ -126,6 +123,8 @@ export const techAndLogoContainerClasses = classNames(
   'flex-wrap',
   'mx-1',
   'my-2',
+  'col-4',
+  'col-sm-5',
 );
 
 export const titleContainerClasses = classNames(
