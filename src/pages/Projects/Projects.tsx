@@ -85,7 +85,7 @@ function Projects() {
                         src={ gitHubIcon }
                         alt="ícone do gitHub"
                       />
-                      Repositório GitHub
+                      Código
                     </a>
                     <a
                       href={ project.deploy }
@@ -98,7 +98,7 @@ function Projects() {
                         src={ siteIcon }
                         alt="ícone de site"
                       />
-                      Visitar aplicação
+                      Visitar
                     </a>
                   </div>
                 </div>

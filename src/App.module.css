@@ -12,6 +12,7 @@
 		--pink-1: #FF25AF;
 		--pink-2: #C02386;
 		--pink-3: #DD50A9E2;
+		--pink-4: #911B66;
 		--purple-1: #5F3165;
 		--purple-2: #946BA1;
 		--purple-3: #6C4E75;
@@ -23,7 +24,7 @@
 	}
 
 html, body {
-	background-color: #5f3165;
+	background-color: var(--purple-1);
 	font-family: 'Roboto', sans-serif;
 	height: 100%;
 	margin: 0;
@@ -34,7 +35,6 @@ html, body {
 #root {
 	height: 100%;
 }
-
 
 .mainContainer {
 	display: flex;

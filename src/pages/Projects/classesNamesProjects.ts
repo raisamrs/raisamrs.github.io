@@ -87,6 +87,9 @@ export const projectTechContainerClasses = classNames(
 
 export const projectTitleCardClasses = classNames(
   styles.projectTitleCard,
+  'pt-1',
+  'ps-2',
+  'col-6',
 );
 
 export const projectTitleCardContainerClasses = classNames(
@@ -94,11 +97,13 @@ export const projectTitleCardContainerClasses = classNames(
   dFlex,
   row,
   'justify-content-start',
-  'ms-3',
 );
 
 export const projectTitleImgClasses = classNames(
   styles.projectTitleImg,
+  'pt-1',
+  'ps-2',
+  'col-6',
 );
 
 export const projectTitleImgContainerClasses = classNames(

@@ -11,6 +11,7 @@
   --pink-1: #FF25AF;
   --pink-2: #C02386;
   --pink-3: #DD50A9E2;
+  --pink-4: #911B66;
   --purple-1: #5F3165;
   --purple-2: #946BA1;
   --purple-3: #6C4E75;
@@ -36,16 +37,18 @@ h3 {
 }
 
 .btn {
-  background-color: var(--violet-2);
-  color: var(--purple-3);
+  background-color: var(--pink-3);
+  border: 1px dashed var(--purple-1);
+  color: var(--white-2);
   font-size: 3vw;
+  gap: 2%;
   height: auto;
-  width: 38vw;
+  width: 20vw;
 }
 
 .btn:hover {
-  background-color: var(--violet-3);
-  color: var(--purple-3);
+  background-color: var(--pink-2);
+  color: var(--white-2);
 }
 
 .btnsContainer {
@@ -80,11 +83,14 @@ border: 1px solid var(--yellow)
 }
 
 .projectCard {
+  background-color: white;
   border: 0.2rem solid var(--violet-2);
   border-radius: 0.5rem;
   border-top-right-radius: 25px;
   overflow: hidden;
   position: relative;
+  width: 92vw;
+  height: 61vw;
 }
 
 .projectCard:hover .showAfter {
@@ -96,12 +102,12 @@ border: 1px solid var(--yellow)
 } */
 
 .projectDescription {
-  /* border: 1px solid orange; */
+  /* border: 1px solid black; */
   color: var(--purple-3);
   font-size: 0.8rem;
   text-align: justify;
   direction: ltr;
-  width: 85vw;
+  width: auto;
 }
 
 .projectTech {
@@ -115,9 +121,9 @@ border: 1px solid var(--yellow)
 }
 
 .projectTitleCard {
-  /* border: 1px solid var(--white-2); */
-  color: var(--violet-2);
-  font-size: 1.25rem;
+  border: 1px solid var(--pink-2);
+  color: var(--pink-4);
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -127,18 +133,18 @@ border: 1px solid var(--yellow)
 }
 
 .projectTitleImg {
-  /* border: 1px solid yellow; */
-  color: var(--violet-1);
-  font-size: 1.25rem;
+  border: 1px solid blue;
+  color: var(--pink-2);
+  font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .projectTitleImgContainer {
-  border: 1px solid var(--violet-2);
-  background-color: var(--purple-1);
+  background-color: var(--violet-1);
   border-top-right-radius: 4rem;
-  height: 3rem;
   width: 100%;
+  height: 3vh;
 }
 
 .showAfter {
@@ -148,23 +154,14 @@ border: 1px solid var(--yellow)
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: var(--grey-5);
+  background-color: var(--violet-2);
   border-top-right-radius: 4rem;
   transition: opacity 0.3s ease-in-out;
   overflow-x: hidden;
   overflow-y: auto;
-  scrollbar-color: var(--white-2) var(--pink-3);
+  scrollbar-color: var(--pink-3) var(--white-2);
   scrollbar-width: thin;
   direction: rtl;
-}
-
-.showAfter::-webkit-scrollbar {
-  width: 8px;
-}
-
-.showAfter::-webkit-scrollbar-thumb {
-  background-color: var(--grey-3);
-  border-radius: 4px;
 }
 
 .showBefore img {
