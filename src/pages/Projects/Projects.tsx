@@ -1,12 +1,15 @@
 import projectsData from '../../data/projects.json';
 import pixelsArt from '../../assets/pixelsArt.png';
 import tryberCalendar from '../../assets/tryberCalendar.png';
+import pokedexRtl from '../../assets/pokemonRtl.png';
 import gitHubIcon from '../../assets/github-icon.svg';
 import siteIcon from '../../assets/site-icon.svg';
 import javascriptIcon from '../../assets/javascript-icon.svg';
 import htmlIcon from '../../assets/html-icon.svg';
 import cssIcon from '../../assets/css-icon.svg';
 import bootstrapIcon from '../../assets/bootstrap-icon.svg';
+import rtlIcon from '../../assets/testing-library-icon.svg';
+import reactIcon from '../../assets/react-icon.svg';
 import { renderDescription } from '../../helpers/renderDescription';
 import { ProjectImageType } from '../../types';
 import {
@@ -26,11 +29,13 @@ const techLogos: { [key: string]: string } = {
   'html-icon.svg': htmlIcon,
   'css-icon.svg': cssIcon,
   'bootstrap-icon.svg': bootstrapIcon,
+  'testing-library-icon.svg': rtlIcon,
+  'react-icon.svg': reactIcon,
 };
 
 function Projects() {
   const projectImages: ProjectImageType = {
-    pixelsArt, tryberCalendar,
+    pixelsArt, tryberCalendar, pokedexRtl,
   };
 
   return (
@@ -75,32 +80,37 @@ function Projects() {
                       ))}
                     </div>
                     <div className={ btnsContainerClasses }>
-                      <a
-                        href={ project.github }
-                        className={ btnGitAndDeployClasses }
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          className={ iconsGitHubAnDeployClasses }
-                          src={ gitHubIcon }
-                          alt="ícone do gitHub"
-                        />
-                        Código
-                      </a>
-                      <a
-                        href={ project.deploy }
-                        className={ btnGitAndDeployClasses }
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          className={ iconsGitHubAnDeployClasses }
-                          src={ siteIcon }
-                          alt="ícone de site"
-                        />
-                        Visitar
-                      </a>
+                      {project && project.github !== '' && (
+
+                        <a
+                          href={ project.github }
+                          className={ btnGitAndDeployClasses }
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            className={ iconsGitHubAnDeployClasses }
+                            src={ gitHubIcon }
+                            alt="ícone do gitHub"
+                          />
+                          Código
+                        </a>
+                      )}
+                      { project && project.deploy !== '' && (
+                        <a
+                          href={ project.deploy }
+                          className={ btnGitAndDeployClasses }
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            className={ iconsGitHubAnDeployClasses }
+                            src={ siteIcon }
+                            alt="ícone de site"
+                          />
+                          Visitar
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

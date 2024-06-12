@@ -48,5 +48,22 @@
     ],
     "github": "https://github.com/raisamrs/tryber-calendar/",
     "deploy": "https://raisamrs.github.io/tryber-calendar/"
+  },
+  {
+    "id": "pokedexRtl",
+    "title": "Pokédex: Testes com RTL",
+    "description": "Enquanto uns caçavam pokémons, eu estava caçando bugs na Pokédex, aplicação desenvolvida pela Trybe, que usou a biblioteca React e consome dados da API PokéAPI! Sendo assim, o objetivo deste projeto, é o desenvolvimento da cobertura de testes para a aplicação utilizando a RTL - biblioteca voltada para testes automatizados front-end em aplicações desenvolvidas com React. ;)",
+    "technologies": [
+      {
+        "name": "RTL",
+        "logo": "testing-library-icon.svg"
+      },
+      {
+        "name": "React",
+        "logo": "react-icon.svg"
+      }
+    ],
+    "github": "https://github.com/raisamrs/project-react-testing-library-ts",
+    "deploy": ""
   }
 ]

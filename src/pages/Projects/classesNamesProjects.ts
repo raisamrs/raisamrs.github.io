@@ -86,7 +86,7 @@ export const projectTitleCardClasses = classNames(
   styles.projectTitleCard,
   'pt-1',
   'ps-2',
-  'col-6',
+  'col-8',
 );
 
 export const projectTitleCardContainerClasses = classNames(
@@ -100,7 +100,7 @@ export const projectTitleImgClasses = classNames(
   styles.projectTitleImg,
   'pt-1',
   'ps-2',
-  'col-6',
+  'col-8',
 );
 
 export const projectTitleImgContainerClasses = classNames(
