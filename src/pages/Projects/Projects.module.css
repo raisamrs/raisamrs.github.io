@@ -26,24 +26,6 @@ h3 {
   text-align: left;
 }
 
-.btn {
-  background-color: var(--pink-3);
-  border: 1px dashed var(--purple-1);
-  color: white;
-  font-size: 3vw;
-  gap: 2%;
-  height: auto;
-}
-
-.btn:hover {
-  background-color: var(--pink-2);
-  color: var(--white-2);
-}
-
-.btnsContainer {
-  gap: 1rem;
-}
-
 .cardBody {
   /* border: 1px solid var(--green-2); */
   display: flex;
@@ -63,15 +45,6 @@ h3 {
   color: var(--pink-1);
 }
 
-.icons {
-  width: 1.2rem;
-}
-
-.iconsGitHubAnDeploy {
-  width: 4vw;
-  height: 4vw;
-}
-
 .projectCard {
   background-color: white;
   border: 0.2rem solid var(--violet-2);
@@ -89,34 +62,9 @@ h3 {
   border: 1px solid var(--violet-1)
 } 
 
-.projectDescription {
-  /* border: 1px solid black; */
-  color: var(--purple-3);
-  font-size: 0.8rem;
-  text-align: justify;
-  direction: ltr;
-  width: auto;
-}
-
 .projectTech {
   border-radius: 0.4rem;
   font-size: 1rem;
-}
-
-.projectTechContainer {
-  border: 1px solid var(--green-1);
-}
-
-.projectTitleCard {
-  /* border: 1px solid var(--pink-2); */
-  color: var(--pink-4);
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.projectTitleCardContainer {
-  /* border: 1px solid red; */
-  direction: ltr;
 }
 
 .projectTitleImg {
@@ -158,14 +106,6 @@ h3 {
 
 .showBefore {
   position: relative;
-}
-
-.techAndLogoContainer {
-  background: white;
-  border: 1px solid var(--pink-3);
-  border-radius: 0.5rem;
-  color: var(--pink-3);
-  font-size: 0.7rem;
 }
 
 .titleContainer {
