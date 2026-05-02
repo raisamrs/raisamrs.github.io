@@ -62,6 +62,14 @@
   visibility: hidden;
 }
 
+.highlight {
+  color: var(--pink-1);
+}
+
+.comment {
+  color: var(--grey-6);
+}
+
 .homeContainer {
   /* border: 2px solid orange; */
   background-color: #5F3165;

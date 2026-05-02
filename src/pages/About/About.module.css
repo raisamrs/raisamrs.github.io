@@ -37,6 +37,7 @@
   border: 0.4rem solid var(--violet-2);
   width: 20vh;
   height: 20vh;
+  object-fit: cover;
 }
 
 .link {
@@ -66,6 +67,10 @@
 }
 
 .year {
+  color: var(--violet-2);
+}
+
+.techStack {
   color: var(--green-1);
 }
 

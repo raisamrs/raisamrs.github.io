@@ -13,6 +13,14 @@ export const gitHubContainerClasses = classNames(
   'rounded-circle',
 );
 
+export const commentClasses = classNames(
+  styles.comment,
+);
+
+export const highlightClasses = classNames(
+  styles.highlight,
+);
+
 export const helloWorldClasses = classNames(
   styles.helloWorld,
   'font-weight-normal',

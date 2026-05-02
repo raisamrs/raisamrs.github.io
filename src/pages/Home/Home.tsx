@@ -4,9 +4,9 @@ import {
   myNameClasses, typedTextClasses, helloWorldClasses, iAmClasses, imgProfileClasses,
   textContainerClasses, homeContainerClasses, imgContainerClasses,
   socialNetWorksContainerClasses, socialNetWorkClasses, textImageContainerClasses,
-  linkedInContainerClasses, gitHubContainerClasses,
+  linkedInContainerClasses, gitHubContainerClasses, highlightClasses, commentClasses,
 } from './classesNamesHome';
-import profilePicture from '../../assets/Raisa - cabelo vermelho.jpg';
+import profilePicture from '../../assets/Raisa - profile picture - ii.jpg';
 import githubIcon from '../../assets/github-icon.svg';
 import linkedinIcon from '../../assets/linkedin-icon.svg';
 import styles from './Home.module.css';
@@ -14,7 +14,7 @@ import styles from './Home.module.css';
 function Home() {
   const [text, setText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = '< Desenvolvedora Web Front-End />';
+  const fullText = '< Analista de Testes />';
   const speed = 100;
   const indexRef = useRef(0);
 
@@ -48,7 +48,16 @@ function Home() {
           />
         </div>
         <div className={ textContainerClasses }>
-          <h2 className={ helloWorldClasses }>&lt; Olá, Mundo! /&gt;</h2>
+          <h2 className={ helloWorldClasses }>
+            expect(
+            <span className={ highlightClasses }>qualidade</span>
+            ).toBe(
+            <span className={ highlightClasses }>true</span>
+            {') '}
+            {/* eslint-disable-next-line react/jsx-curly-brace-presence */}
+            <span className={ commentClasses }>{'//'}</span>
+            {' 🎉'}
+          </h2>
           <h3 className={ iAmClasses }>Eu sou</h3>
           <h1 className={ myNameClasses }>Raisa Moreno</h1>
           <h3 className={ typedTextClasses }>
@@ -57,6 +66,7 @@ function Home() {
               className={ classNames(styles.cursor, { [styles.hidden]: !showCursor }) }
             />
           </h3>
+          {/* eslint-disable react/jsx-max-depth */}
           <div className={ socialNetWorksContainerClasses }>
             <div className={ linkedInContainerClasses }>
               <a
@@ -72,7 +82,6 @@ function Home() {
               </a>
             </div>
             <div className={ gitHubContainerClasses }>
-
               <a
                 href="https://github.com/raisamrs"
                 target="_blank"
@@ -86,6 +95,7 @@ function Home() {
               </a>
             </div>
           </div>
+          {/* eslint-enable react/jsx-max-depth */}
         </div>
       </div>
 
