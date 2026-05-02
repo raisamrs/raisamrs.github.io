@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-max-depth */
 import { aboutMeContainerClasses, profilePictureClasses, textImageContainerClasses,
   textContainerClasses, textContentClasses, titleClasses, imgContainerClasses,
   titleBgClasses, titleFgClasses,
 } from './classesNamesAbout';
 import { titleContainerClasses } from '../../classesNamesApp';
 import styles from './About.module.css';
-import picturePurpleHair from '../../assets/Raisa - cabelo lilás.png';
+import profilePicture from '../../assets/Raisa - profile picture - i.png';
 
 function About() {
   return (
@@ -17,52 +18,60 @@ function About() {
         <div className={ imgContainerClasses }>
           <img
             className={ profilePictureClasses }
-            src={ picturePurpleHair }
+            src={ profilePicture }
             alt="foto de perfil"
           />
         </div>
         <div className={ textContainerClasses }>
-          <h3 className={ titleClasses }>Oiê! Seja bem-vinde! o/</h3>
+          <h3 className={ titleClasses }>Oiê! Seja bem-vinde 👋</h3>
           <div className={ textContentClasses }>
             <p>
               {/* eslint-disable-next-line max-len */}
-              Tenho 32 anos, nasci e moro em Salvador - BA, sou mãe de pet 🐕, amo cores, adoro perucas e vivo mudando de cabelo!
+              Sou Raisa, tenho 34 anos e sou Analista de QA. Nasci e moro em Salvador - BA e sou mãe de pet 🐕!
             </p>
             <p>
-              Minha história como profissional de tecnologia se iniciou em&nbsp;
+              Minha história com tecnologia começou em&nbsp;
               <span className={ styles.year }>2018</span>
-              {/* eslint-disable-next-line max-len */}
-              , quando atuei, por um curto período, na área de gerenciamento de projetos. Em&nbsp;
+              , na área de gerenciamento de projetos. Em&nbsp;
               <span className={ styles.year }>2019</span>
               {/* eslint-disable-next-line max-len */}
-              , migrei para a área de qualidade de software e adquiri habilidades essenciais trabalhando como testadora para algumas consultorias, numa das quais tive o privilégio de contribuir em projetos desafiadores para clientes renomados como&nbsp;
-              <b>B3&nbsp;</b>
-              e&nbsp;
+              &nbsp;migrei para o QA, e desde então passei por consultorias onde tive o privilégio de atuar em projetos críticos do setor financeiro para clientes como&nbsp;
+              <b>B3</b>
+              &nbsp;e&nbsp;
               <b>Itaú</b>
               .
-              {' '}
             </p>
             <p>
-              {' '}
-              Recentemente, no final de&nbsp;
-              <span className={ styles.year }>2023</span>
+              Hoje, atuo com testes manuais e automação front-end com&nbsp;
+              <span className={ styles.techStack }>Playwright</span>
+              . Antes, trabalhei com&nbsp;
+              <span className={ styles.techStack }>Cypress</span>
               {/* eslint-disable-next-line max-len */}
-              , decidi realizar uma transição de área, percebendo que o desenvolvimento de software vai me oferecerer maior realização profissional.&nbsp;
-              {/* eslint-disable-next-line max-len */}
-              Eu estou empenhada em aprimorar minhas habilidades como desenvolvedora web, e para isso estou cursando a&nbsp;
+              &nbsp;em outros projetos, e venho ampliando meu repertório em ferramentas de automação. 🚀
+            </p>
+            <p>
+              Em&nbsp;
+              <span className={ styles.year }>2024</span>
+              &nbsp;concluí a&nbsp;
               <a
                 className={ styles.link }
                 href="https://www.betrybe.com/formacao-desenvolvimento-web"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                formação em Desenvolvimento Full Stack na Trybe
+                formação em Desenvolvimento Front-End pela Trybe
               </a>
-              .
+              {/* eslint-disable-next-line max-len */}
+              , que ampliou minha visão técnica e me aproximou ainda mais do desenvolvimento.
             </p>
             <p>
               {/* eslint-disable-next-line max-len */}
-              Minha paixão pelas cores e minha experiência no mundo da arte (literalmente, pinto e bordo! Hahaha!) me impulsionam especialmente em direção ao front-end, onde é possível combinar minha criatividade com habilidades técnicas para criar boas experiências visuais impactante para os usuários. Adoro ver meus códigos dando forma a soluções tecnológicas bonitas e funcionais! 💜
+              Pra mim, qualidade é parte do processo de desenvolvimento e não uma etapa que começa quando o time de devs entrega o código pronto. Acredito em QA atuando desde o refinamento de requisitos, contribuindo com critérios de aceitação claros, antecipando cenários de risco e prevenindo bugs antes que eles aconteçam. Testar é o último passo de um trabalho que começa muito antes.
+            </p>
+            <p>
+              Acredito que
+              <b>qualidade é cultura, não etapa</b>
+              . ✨
             </p>
           </div>
         </div>
