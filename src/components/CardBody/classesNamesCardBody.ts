@@ -7,37 +7,42 @@ const row = 'flex-row';
 const alignItemsCenter = 'align-items-center';
 const justifyCenter = 'justify-content-center';
 const rowReverse = 'flex-row-reverse';
+const justifyContentStart = 'justify-content-start';
 
+// alinhamento dos itens no corpo do card: agora começam à esquerda (não centralizados)
 export const alignItemsBodyCardClasses = classNames(
   dFlex,
   column,
-  alignItemsCenter,
+  'align-items-start',
+  'w-100',
 );
 
 export const btnsContainerClasses = classNames(
   styles.btnsContainer,
   dFlex,
   row,
-  justifyCenter,
+  // botões alinhados à esquerda, não centralizados
+  justifyContentStart,
   alignItemsCenter,
-  'mb-2',
+  'mt-2',
 );
 
 export const btnGitAndDeployClasses = classNames(
   styles.btn,
   dFlex,
   rowReverse,
+  alignItemsCenter,
   'btn',
 );
 
 export const cardBodyClasses = classNames(
   dFlex,
   column,
+  'h-100',
 );
 
 export const iconsClasses = classNames(
   styles.icons,
-  'me-1',
 );
 
 export const iconsGitHubAnDeployClasses = classNames(
@@ -46,47 +51,44 @@ export const iconsGitHubAnDeployClasses = classNames(
 
 export const projectDescriptionClasses = classNames(
   styles.projectDescription,
-  'mx-3',
+  // removido mx-3 (não precisa mais de margem horizontal forçada)
+  'my-2',
 );
 
 export const projectTechClasses = classNames(
   styles.projectTech,
 );
 
+// container das tags: removidos col-12 e a borda verde
+// flex-wrap permite que tags quebrem linha se necessário
 export const projectTechContainerClasses = classNames(
   styles.projectTechContainer,
   dFlex,
   row,
   alignItemsCenter,
-  'col-12',
-  justifyCenter,
+  justifyContentStart,
   'flex-wrap',
-  'mb-3',
+  'mb-2',
 );
 
 export const projectTitleCardContainerClasses = classNames(
   styles.projectTitleCardContainer,
   dFlex,
   row,
-  'justify-content-start',
+  justifyContentStart,
 );
 
+// removido pt-1 ps-2 col-8 (sem necessidade de offset horizontal agora)
 export const projectTitleCardClasses = classNames(
   styles.projectTitleCard,
-  'pt-1',
-  'ps-2',
-  'col-8',
 );
 
+// tag individual: removidos col-4 e col-sm-5 (largura fixa em coluna)
+// agora cada tag tem largura automática (do conteúdo)
 export const techAndLogoContainerClasses = classNames(
   styles.techAndLogoContainer,
   dFlex,
   rowReverse,
   alignItemsCenter,
   justifyCenter,
-  'flex-wrap',
-  'mx-1',
-  'my-2',
-  'col-4',
-  'col-sm-5',
 );
