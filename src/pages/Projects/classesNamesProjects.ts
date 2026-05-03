@@ -2,53 +2,33 @@ import classNames from 'classnames';
 import styles from './Projects.module.css';
 import stylesApp from '../../App.module.css';
 
-const dFlex = 'd-flex';
-const column = 'flex-column';
-const justifyCenter = 'justify-content-center';
-const alignItemsCenter = 'align-items-center';
-
-export const cardsContainerClasses = classNames(
-  styles.cardsContainer,
-  dFlex,
-  column,
-  justifyCenter,
+// row do Bootstrap: distribui filhos em colunas conforme col-*
+// g-4 = gap (espaçamento) de 1.5rem entre os cards
+// justify-content-center centraliza linha incompleta (ex: 2 cards na última fileira)
+export const cardsRowClasses = classNames(
+  styles.cardsRow,
+  'row',
+  'g-4',
+  'justify-content-center',
 );
 
-export const imgProjectClasses = classNames(
-  'card-img-top',
+// wrapper de coluna: define quantos cards por linha em cada breakpoint
+// col-12       -> 1 card por linha (mobile)
+// col-md-6     -> 2 cards por linha (≥768px)
+// col-lg-4     -> 3 cards por linha (≥992px)
+// d-flex justify-content-center -> centraliza o card dentro da coluna
+export const projectColClasses = classNames(
+  'col-12',
+  'col-md-6',
+  'col-lg-4',
+  'd-flex',
+  'justify-content-center',
 );
 
+// w-100 garante que o card preencha o col- ao redor
 export const projectCardClasses = classNames(
   styles.projectCard,
-  'my-3',
-  'col-md-10',
-);
-
-export const projectContainerClasses = classNames(
-  styles.projectContainer,
-);
-
-export const projectDescriptionClasses = classNames(
-  styles.projectDescription,
-  'mx-3',
-);
-
-export const projectTitleImgClasses = classNames(
-  styles.projectTitleImg,
-  'pt-1',
-  'ps-2',
-  'col-8',
-);
-
-export const projectTitleImgContainerClasses = classNames(
-  styles.projectTitleImgContainer,
-);
-
-export const columnCardsClasses = classNames(
-  styles.columnCards,
-  dFlex,
-  column,
-  alignItemsCenter,
+  'w-100',
 );
 
 export const titleContainerClasses = classNames(

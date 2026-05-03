@@ -1,10 +1,14 @@
+/* botão Visitar e Código */
 .btn {
   background-color: var(--pink-3);
-  border: 1px dashed var(--purple-1);
+  border: 1px solid var(--pink-2);
   color: white;
-  font-size: 3vw;
-  gap: 2%;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  gap: 0.4rem;
   height: auto;
+  border-radius: 0.4rem;
+  transition: background-color 0.2s ease;
 }
 
 .btn:hover {
@@ -13,52 +17,58 @@
 }
 
 .btnsContainer {
-  gap: 1rem;
+  gap: 0.6rem;
 }
 
 .icons {
-  width: 1.2rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .iconsGitHubAnDeploy {
-  width: 4vw;
-  height: 4vw;
+  width: 1rem;
+  height: 1rem;
 }
 
 .projectDescription {
-  /* border: 1px solid black; */
   color: var(--purple-3);
-  font-size: 0.8rem;
-  text-align: justify;
-  direction: ltr;
-  width: auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  width: 100%;
+  /* tira o flex: 1 do container que empurrava os botões pra baixo */
+  flex: 1;
 }
 
+/* tag de tecnologia: pílula roxa clara como no mockup */
 .projectTech {
-  border-radius: 0.4rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  color: var(--purple-1);
+  font-weight: 500;
 }
 
 .projectTechContainer {
-  border: 1px solid var(--green-1);
+  gap: 0.4rem;
 }
 
 .projectTitleCardContainer {
-  /* border: 1px solid red; */
-  direction: ltr;
+  width: 100%;
 }
 
 .projectTitleCard {
-  /* border: 1px solid var(--pink-2); */
   color: var(--pink-4);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
+  margin: 0;
+  text-align: left;
 }
 
 .techAndLogoContainer {
-  background: white;
-  border: 1px solid var(--pink-3);
-  border-radius: 0.5rem;
-  color: var(--pink-3);
+  background: var(--violet-1);
+  border: none;
+  border-radius: 999px;
+  color: var(--purple-1);
   font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  width: auto;
 }

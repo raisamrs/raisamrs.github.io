@@ -22,105 +22,35 @@
   --yellow: #FFE100D7;
 }
 
-h3 {
-  text-align: left;
-}
-
-.cardBody {
-  /* border: 1px solid var(--green-2); */
-  display: flex;
-  flex-direction: column;
-}
-
-/* .cardsContainer {
-  border: 1px solid var(--grey-4);
-} */
-
-/* .columnCards {
-  border: 1px solid var(--yellow)
-  } */
-
-  .highlight {
+.highlight {
   font-style: italic;
   color: var(--pink-1);
 }
 
+/* row dos cards */
+.cardsRow {
+  width: 100%;
+}
+
+/* card retangular vertical, todas as pontas com mesmo arredondamento */
 .projectCard {
   background-color: white;
   border: 0.2rem solid var(--violet-2);
-  border-radius: 0.5rem;
-  border-top-right-radius: 25px;
-  overflow: hidden;
-  position: relative;
-}
-
-.projectCard:hover .showAfter {
-  opacity: 1; /* Torna visível ao passar o mouse */
+  /* todas as pontas iguais (removido o border-top-right-radius diferente) */
+  border-radius: 1rem;
+  padding: 1.5rem 1.25rem;
+  /* altura maior que a largura: proporção ~1.4:1 (vertical) */
+  min-height: 26rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectContainer {
-  border: 1px solid var(--violet-1)
-} 
-
-.projectTech {
-  border-radius: 0.4rem;
-  font-size: 1rem;
-}
-
-.projectTitleImg {
-  /* border: 1px solid blue; */
-  color: var(--pink-2);
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.projectTitleImgContainer {
-  background-color: var(--violet-1);
-  border-top-right-radius: 4rem;
-  width: 100%;
-  height: 3rem;
-}
-
-.showAfter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  background-color: var(--violet-2);
-  border-top-right-radius: 4rem;
-  transition: opacity 0.3s ease-in-out;
-  overflow-x: hidden;
-  overflow-y: auto;
-  scrollbar-color: var(--pink-3) var(--white-2);
-  scrollbar-width: thin;
-  direction: rtl;
-}
-
-.showBefore img {
-  width: 100%;
-  height: 100%;
-}
-
-.showBefore {
-  position: relative;
+  border: 1px solid var(--violet-1);
 }
 
 .titleContainer {
-/*   border: 1px solid salmon; */
   position: relative;
   text-align: center;
-}
-
-@media (min-width: 576px) {
-
-  .projectTitleCard , .projectTitleImg {
-    font-size: 1.5rem;
-  }
-
-  .projectDescription {
-    font-size: 1rem;
-  }
 }
