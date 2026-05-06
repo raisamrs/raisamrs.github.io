@@ -70,6 +70,7 @@ function About() {
             </p>
             <p>
               Acredito que
+              {' '}
               <b>qualidade é cultura, não etapa</b>
               . ✨
             </p>
